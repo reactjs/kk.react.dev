@@ -131,7 +131,7 @@ export function HomeContent() {
             React
           </h1>
           <p className="text-4xl font-display max-w-lg md:max-w-full py-1 text-center text-secondary dark:text-primary-dark leading-snug self-center">
-            The library for web and native user interfaces
+            Веб және нативті бағдарлама интерфейстеріне арналған қосымша
           </p>
           <div className="mt-5 self-center flex gap-2 w-full sm:w-auto flex-col sm:flex-row">
             <ButtonLink
@@ -139,29 +139,30 @@ export function HomeContent() {
               type="primary"
               size="lg"
               className="w-full sm:w-auto justify-center"
-              label="Learn React">
-              Learn React
+              label="React үйрену">
+              React үйрену
             </ButtonLink>
             <ButtonLink
               href={'/reference/react'}
               type="secondary"
               size="lg"
               className="w-full sm:w-auto justify-center"
-              label="API Reference">
-              API Reference
+              label="API сілтеме">
+              API сілтеме
             </ButtonLink>
           </div>
         </div>
 
         <Section background="left-card">
           <Center>
-            <Header>Create user interfaces from components</Header>
+            <Header>Компоненттерден пайдаланушы интерфейстерін жасаңыз</Header>
             <Para>
-              React lets you build user interfaces out of individual pieces
-              called components. Create your own React components like{' '}
-              <Code>Thumbnail</Code>, <Code>LikeButton</Code>, and{' '}
-              <Code>Video</Code>. Then combine them into entire screens, pages,
-              and apps.
+              React компоненттері деп атаулы, жеке бөліктерден тұратын
+              пайдаланушы интерфейстерін жасауға мүмкіндік береді.{' '}
+              <Code>Thumbnail</Code>, <Code>LikeButton</Code>, және{' '}
+              <Code>Video</Code> сияқты өз компоненттеріңізді жасаңыз. Содан
+              кейін оларды барлық экрандарға, беттерге және қосымшаларға
+              біріктіріңіз.
             </Para>
           </Center>
           <FullBleed>
@@ -169,22 +170,21 @@ export function HomeContent() {
           </FullBleed>
           <Center>
             <Para>
-              Whether you work on your own or with thousands of other
-              developers, using React feels the same. It is designed to let you
-              seamlessly combine components written by independent people,
-              teams, and organizations.
+              Сіз өзіңіз немесе мыңдаған басқа инженерлермен жұмыс жасасаңыз да,
+              React қолдану бірдей сезіледі. Ол тәуелсіз адамдар, командалар мен
+              ұйымдар жазған компоненттерді оңай біріктіруге арналған.
             </Para>
           </Center>
         </Section>
 
         <Section background="right-card">
           <Center>
-            <Header>Write components with code and markup</Header>
+            <Header>Компоненттерді код пен таңба арқылы жазыңыз</Header>
             <Para>
-              React components are JavaScript functions. Want to show some
-              content conditionally? Use an <Code>if</Code> statement.
-              Displaying a list? Try array <Code>map()</Code>. Learning React is
-              learning programming.
+              React компоненттері JavaScript функциялары болып табылады. Кейбір
+              мазмұнды шартты түрде көрсеткіңіз келе ме? <Code>If</Code> шартын
+              пайдаланыңыз. Тізімді көрсету керек пе? Массив <Code>map()</Code>{' '}
+              қолданып көріңіз. React үйрену — бағдарламалауды үйрену.
             </Para>
           </Center>
           <FullBleed>
@@ -192,22 +192,23 @@ export function HomeContent() {
           </FullBleed>
           <Center>
             <Para>
-              This markup syntax is called JSX. It is a JavaScript syntax
-              extension popularized by React. Putting JSX markup close to
-              related rendering logic makes React components easy to create,
-              maintain, and delete.
+              Бұл таңба синтаксисі JSX деп аталады. Бұл React танымал JavaScript
+              синтаксисінің кеңейтімі. JSX таңбасын қолдану рендеринг логикасына
+              жақын, React компоненттерін құрастыруды, бақылауды және жою
+              жеңілдетеді.
             </Para>
           </Center>
         </Section>
 
         <Section background="left-card">
           <Center>
-            <Header>Add interactivity wherever you need it</Header>
+            <Header>Қажет болған жерде интерактивтілікті қосыңыз</Header>
             <Para>
-              React components receive data and return what should appear on the
-              screen. You can pass them new data in response to an interaction,
-              like when the user types into an input. React will then update the
-              screen to match the new data.
+              React компоненттері деректерді қабылдайды және экранда пайда
+              болатын нәрсені қайтарады. Сіз өзара интерактивке жауап ретінде
+              жаңа деректерді жібере аласыз, мысалы, пайдаланушы деректерді
+              енгізген кезде. Содан кейін React экранды жаңа деректерге сәйкес
+              жаңартады.
             </Para>
           </Center>
           <FullBleed>
@@ -215,16 +216,16 @@ export function HomeContent() {
           </FullBleed>
           <Center>
             <Para>
-              You don’t have to build your whole page in React. Add React to
-              your existing HTML page, and render interactive React components
-              anywhere on it.
+              Сізге бүкіл парақшаны React-те құрудың қажеті жоқ. Бар HTML
+              парақшасына React-ті қосыңыз да және оның кез келген жерінде
+              интерактивті React компоненттерін рендерленініз.
             </Para>
             <div className="flex justify-start w-full lg:justify-center">
               <CTA
                 color="gray"
                 icon="code"
                 href="/learn/add-react-to-an-existing-project">
-                Add React to your page
+                Өз парағыңызға React қосу
               </CTA>
             </div>
           </Center>
@@ -259,7 +260,7 @@ export function HomeContent() {
                 color="gray"
                 icon="framework"
                 href="/learn/start-a-new-react-project">
-                Get started with a framework
+                Фреймворктен бастаңыз
               </CTA>
             </div>
           </Center>
