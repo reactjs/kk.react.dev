@@ -171,8 +171,8 @@ export function HomeContent() {
           <Center>
             <Para>
               Сіз өзіңіз немесе мыңдаған басқа инженерлермен жұмыс жасасаңыз да,
-              React қолдану бірдей сезіледі. Ол тәуелсіз адамдар, командалар мен
-              ұйымдар жазған компоненттерді оңай біріктіруге арналған.
+              React-ті қолдану бірдей болады. Ол тәуелсіз адамдар, командалар
+              мен ұйымдар жазған компоненттерді оңай біріктіруге арналған.
             </Para>
           </Center>
         </Section>
@@ -253,10 +253,10 @@ export function HomeContent() {
           <Center>
             <Para>
               React сонымен қатар архитектура болып табылады. Оны жүзеге
-              асыратын фреймворк серверде немесе тіпті құрастыру кезінде жұмыс
-              істейтін асинхронды компонент бөліктерде деректерді алуға
-              мүмкіндік береді. Файлдан немесе дерекқордан деректерді оқып, оны
-              интерактивті компоненттерге жіберіңіз.
+              асыратын фреймворк серверде немесе тіпті билд кезінде жұмыс
+              істейтін асинхронды компонент деректерді алуға мүмкіндік береді.
+              Файлдан немесе дерекқордан деректерді оқып, оны интерактивті
+              компоненттерге жіберіңіз.
             </Para>
             <div className="flex justify-start w-full lg:justify-center">
               <CTA
@@ -271,14 +271,14 @@ export function HomeContent() {
         <Section background="left-card">
           <div className="mx-auto flex flex-col w-full">
             <div className="mx-auto max-w-4xl lg:text-center items-center px-5 flex flex-col">
-              <Header>Әрбір платформадан ең жақсысын пайдаланыңыз</Header>
+              <Header>Әр платформаның ең жақсысын пайдаланыңыз</Header>
               <Para>
                 Адамдар әртүрлі себептермен веб және нативті бағдарламаларды
                 жақсы көреді. React бірдей дағдыларды пайдалана отырып, веб
                 бағдарламаларды да, нативті бағдарламаларды да жасауға мүмкіндік
                 береді. Ол мүмкіндік беру үшін әрбір платформаның бірегей күшті
                 жақтарына сүйене отырып, сіздің интерфейстеріңіз әр платформаға
-                жақсы жарамдатады.
+                жаратады.
               </Para>
             </div>
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row mt-16 mb-20 lg:mb-28 px-5 gap-20 lg:gap-5">
@@ -296,12 +296,12 @@ export function HomeContent() {
                       </h4>
                       <p className="lg:text-xl leading-normal text-secondary">
                         Қолданушылар веб-бағдарлама беттерінің жылдам жүктелуін
-                        күтеді. On the server, React lets you start streaming
-                        HTML while you’re still fetching data, progressively
-                        filling in the remaining content before any JavaScript
-                        code loads. On the client, React can use standard web
-                        APIs to keep your UI responsive even in the middle
-                        of rendering.
+                        күтеді. Серверде React кез келген JavaScript коды
+                        жүктелмес бұрын қалған мазмұнды біртіндеп толтырып,
+                        деректерді алу кезінде HTML ағынын бастауға мүмкіндік
+                        береді. Клиентте React UI интерфейсін рендерлеу кезінде
+                        де жауап беру үшін стандартты веб API-лерді пайдалана
+                        алады.
                       </p>
                     </div>
                   </div>
@@ -382,18 +382,19 @@ export function HomeContent() {
                           Нативке бет бұрыныз
                         </h4>
                         <p className="h-full lg:text-xl text-secondary dark:text-secondary-dark leading-normal">
-                          People expect native apps to look and feel like their
-                          platform.{' '}
+                          Адамдар нативті бағдарламаларды өздерінің
+                          платформасына ұқсайтынын күтеді. React арқылы{' '}
                           <Link href="https://reactnative.dev">
                             React Native
                           </Link>{' '}
-                          and{' '}
+                          және{' '}
                           <Link href="https://github.com/expo/expo">Expo</Link>{' '}
-                          let you build apps in React for Android, iOS, and
-                          more. They look and feel native because their UIs{' '}
-                          <i>are</i> truly native. It’s not a web view—your
-                          React components render real Android and iOS views
-                          provided by the platform.
+                          қолданып Android, IOS және т.б. бағдарламаларын
+                          жасауға мүмкіндік береді. Олар нативті болып көрінеді
+                          және сезінеді, өйткені олардың пайдаланушы
+                          интерфейстері <i>шынымен</i> нативті. Бұл веб көрініс
+                          емес — сіздің React компоненттеріңіз платформамен
+                          қамтамасыз етілген нақты Android және iOS көрініс.
                         </p>
                       </div>
                     </div>
@@ -420,19 +421,21 @@ export function HomeContent() {
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row px-5">
             <div className="max-w-3xl lg:max-w-7xl gap-5 flex flex-col lg:flex-row lg:px-5">
               <div className="w-full lg:w-6/12 max-w-3xl flex flex-col items-start justify-start lg:pl-5 lg:pr-10">
-                <Header>Болашақ уақыт дайын болғанда жаңартыңыз</Header>
+                <Header>Болашақ дайын болғанда жаңартыңыз</Header>
                 <Para>
-                  React болашақ өзгерістерге мұқият қарайды. Every React commit
-                  is tested on business-critical surfaces with over a billion
-                  users. Over 100,000 React components at Meta help validate
-                  every migration strategy.
+                  React болашақ өзгерістерге мұқият қарайды. Әрбір React-қа
+                  жасаған коммит миллиардтан астам пайдаланушысы бар бизнес үшін
+                  маңызды беттерде сыналады. Meta-дағы 100 000-нан астам React
+                  компоненттері әрбір миграция стратегиясын тексеруге
+                  көмектеседі.
                 </Para>
                 <div className="order-last pt-5">
                   <Para>
-                    The React team is always researching how to improve React.
-                    Some research takes years to pay off. React has a high bar
-                    for taking a research idea into production. Only proven
-                    approaches become a part of React.
+                    React командасы әрқашан React-ті қалай жақсартуға болатынын
+                    зерттейді. Кейбір зерттеулердің нәтижесін беру үшін жылдар
+                    қажет. React өндіріске ғылыми-зерттеу идеясын енгізу үшін
+                    жоғары жолға ие. Тек дәлелденген тәсілдер React бөлігі бола
+                    алады.
                   </Para>
                   <div className="hidden lg:flex justify-start w-full">
                     <CTA color="gray" icon="news" href="/blog">
@@ -479,12 +482,9 @@ export function HomeContent() {
                   қосылыңыз
                 </Header>
                 <Para>
-                  You’re not alone. Two million developers from all over the
-                  world visit the React docs every month. React is something
-                  that people and teams can agree on. Сіз жалғыз емессіз. Ай
-                  сайын React құжаттарына әлемнің түкпір-түкпірінен екі миллион
-                  әзірлеушілер кіреді. Реакция - бұл адамдар мен командалар
-                  келісе алатын нәрсе.
+                  Сіз жалғыз емессіз. Ай сайын React құжаттарына әлемнің
+                  түкпір-түкпірінен екі миллион бағдарлаушылар кіреді. React -
+                  бұл адамдар мен командалар қосыла алатын аумақ.
                 </Para>
               </Center>
             </div>
@@ -492,13 +492,15 @@ export function HomeContent() {
             <div className="mx-auto flex flex-col max-w-4xl">
               <Center>
                 <Para>
-                  This is why React is more than a library, an architecture, or
-                  even an ecosystem. React is a community. It’s a place where
-                  you can ask for help, find opportunities, and meet new
-                  friends. You will meet both developers and designers,
-                  beginners and experts, researchers and artists, teachers and
-                  students. Our backgrounds may be very different, but React
-                  lets us all create user interfaces together.
+                  Сондықтан React бағдарламық қосымшадан, архитектурадан немесе
+                  тіпті экожүйеден де артық. React - бұл қауымдастық. Бұл көмек
+                  сұрауға, мүмкіндіктер табуға және жаңа достармен кездесуге
+                  болатын орын. Сіз бағдарламаушылармен де, дизайнерлермен де,
+                  жаңадан бастаушылармен және сарапшылармен, зерттеушілермен
+                  және суретшілермен, оқытушылармен және студенттермен
+                  кездесесіз. Біздің тәжірибиеміз әртүрлі болуы мүмкін, бірақ
+                  React барлығымызға бірге пайдаланушы интерфейстерін жасауға
+                  мүмкіндік береді.
                 </Para>
               </Center>
             </div>
