@@ -157,7 +157,7 @@ export function HomeContent() {
           <Center>
             <Header>Компоненттерден пайдаланушы интерфейстерін жасаңыз</Header>
             <Para>
-              React компоненттері деп атаулы, жеке бөліктерден тұратын
+              React компоненттері деп атаулы, жеке бөліктерден тұратын,
               пайдаланушы интерфейстерін жасауға мүмкіндік береді.{' '}
               <Code>Thumbnail</Code>, <Code>LikeButton</Code>, және{' '}
               <Code>Video</Code> сияқты өз компоненттеріңізді жасаңыз. Содан
@@ -181,10 +181,11 @@ export function HomeContent() {
           <Center>
             <Header>Компоненттерді код пен таңба арқылы жазыңыз</Header>
             <Para>
-              React компоненттері JavaScript функциялары болып табылады. Кейбір
-              мазмұнды шартты түрде көрсеткіңіз келе ме? <Code>If</Code> шартын
-              пайдаланыңыз. Тізімді көрсету керек пе? Массив <Code>map()</Code>{' '}
-              қолданып көріңіз. React үйрену — бағдарламалауды үйрену.
+              React компоненттері — JavaScript функциялары болып табылады.
+              Кейбір мазмұнды шартты түрде көрсеткіңіз келе ме? <Code>If</Code>{' '}
+              шартын пайдаланыңыз. Тізімді көрсету керек пе? Массив{' '}
+              <Code>map()</Code> қолданып көріңіз. React үйрену —
+              бағдарламалауды үйрену.
             </Para>
           </Center>
           <FullBleed>
@@ -234,15 +235,16 @@ export function HomeContent() {
         <Section background="right-card">
           <Center>
             <Header>
-              Go full-stack <br className="hidden lg:inline" />
-              with a framework
+              Фреймворк арқылы <br className="hidden lg:inline" />
+              фулл-стекке өтіңіз
             </Header>
             <Para>
-              React is a library. It lets you put components together, but it
-              doesn’t prescribe how to do routing and data fetching. To build an
-              entire app with React, we recommend a full-stack React framework
-              like <Link href="https://nextjs.org">Next.js</Link> or{' '}
-              <Link href="https://remix.run">Remix</Link>.
+              React - бұл бағдарламалық қосымша. Ол компоненттерді біріктіруге
+              мүмкіндік береді, бірақ маршруттау мен деректерді алу жолын
+              көрсетпейді. React көмегімен толық бағдарлама құру үшін{' '}
+              <Link href="https://nextjs.org">Next.js</Link> немесе{' '}
+              <Link href="https://remix.run">Remix</Link> сияқты фулл-стекті
+              ұсынамыз
             </Para>
           </Center>
           <FullBleed>
@@ -250,10 +252,11 @@ export function HomeContent() {
           </FullBleed>
           <Center>
             <Para>
-              React is also an architecture. Frameworks that implement it let
-              you fetch data in asynchronous components that run on the server
-              or even during the build. Read data from a file or a database, and
-              pass it down to your interactive components.
+              React сонымен қатар архитектура болып табылады. Оны жүзеге
+              асыратын фреймворк серверде немесе тіпті құрастыру кезінде жұмыс
+              істейтін асинхронды компонент бөліктерде деректерді алуға
+              мүмкіндік береді. Файлдан немесе дерекқордан деректерді оқып, оны
+              интерактивті компоненттерге жіберіңіз.
             </Para>
             <div className="flex justify-start w-full lg:justify-center">
               <CTA
@@ -268,7 +271,7 @@ export function HomeContent() {
         <Section background="left-card">
           <div className="mx-auto flex flex-col w-full">
             <div className="mx-auto max-w-4xl lg:text-center items-center px-5 flex flex-col">
-              <Header>Use the best from every platform</Header>
+              <Header>Әрбір платформадан ең жақсысын пайдаланыңыз</Header>
               <Para>
                 People love web and native apps for different reasons. React
                 lets you build both web apps and native apps using the same
