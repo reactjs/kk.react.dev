@@ -139,8 +139,8 @@ export function HomeContent() {
               type="primary"
               size="lg"
               className="w-full sm:w-auto justify-center"
-              label="React үйрену">
-              React үйрену
+              label="React-ті үйрену">
+              React-ті үйрену
             </ButtonLink>
             <ButtonLink
               href={'/reference/react'}
@@ -184,7 +184,7 @@ export function HomeContent() {
               React компоненттері — JavaScript функциялары болып табылады.
               Кейбір мазмұнды шартты түрде көрсеткіңіз келе ме? <Code>If</Code>{' '}
               шартын пайдаланыңыз. Тізімді көрсету керек пе? Массив{' '}
-              <Code>map()</Code> қолданып көріңіз. React үйрену —
+              <Code>map()</Code> қолданып көріңіз. React-ті үйрену —
               бағдарламалауды үйрену.
             </Para>
           </Center>
@@ -273,10 +273,12 @@ export function HomeContent() {
             <div className="mx-auto max-w-4xl lg:text-center items-center px-5 flex flex-col">
               <Header>Әрбір платформадан ең жақсысын пайдаланыңыз</Header>
               <Para>
-                People love web and native apps for different reasons. React
-                lets you build both web apps and native apps using the same
-                skills. It leans upon each platform’s unique strengths to let
-                your interfaces feel just right on every platform.
+                Адамдар әртүрлі себептермен веб және нативті бағдарламаларды
+                жақсы көреді. React бірдей дағдыларды пайдалана отырып, веб
+                бағдарламаларды да, нативті бағдарламаларды да жасауға мүмкіндік
+                береді. Ол мүмкіндік беру үшін әрбір платформаның бірегей күшті
+                жақтарына сүйене отырып, сіздің интерфейстеріңіз әр платформаға
+                жақсы жарамдатады.
               </Para>
             </div>
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row mt-16 mb-20 lg:mb-28 px-5 gap-20 lg:gap-5">
@@ -290,15 +292,16 @@ export function HomeContent() {
                     <div className="bg-wash relative h-14 w-full" />
                     <div className="relative flex items-start justify-center flex-col flex-1 pb-16 pt-5 gap-3 px-5 lg:px-10 lg:pt-8">
                       <h4 className="leading-tight text-primary font-semibold text-3xl lg:text-4xl">
-                        Stay true to the web
+                        Интернетке адал болыңыз
                       </h4>
                       <p className="lg:text-xl leading-normal text-secondary">
-                        People expect web app pages to load fast. On the server,
-                        React lets you start streaming HTML while you’re still
-                        fetching data, progressively filling in the remaining
-                        content before any JavaScript code loads. On the client,
-                        React can use standard web APIs to keep your UI
-                        responsive even in the middle of rendering.
+                        Қолданушылар веб-бағдарлама беттерінің жылдам жүктелуін
+                        күтеді. On the server, React lets you start streaming
+                        HTML while you’re still fetching data, progressively
+                        filling in the remaining content before any JavaScript
+                        code loads. On the client, React can use standard web
+                        APIs to keep your UI responsive even in the middle
+                        of rendering.
                       </p>
                     </div>
                   </div>
@@ -376,7 +379,7 @@ export function HomeContent() {
                       </div>
                       <div className="flex flex-col items-start justify-center pt-0 gap-3 px-2.5 lg:pt-8 lg:px-8">
                         <h4 className="leading-tight text-primary dark:text-primary-dark font-semibold text-3xl lg:text-4xl">
-                          Go truly native
+                          Нативке бет бұрыныз
                         </h4>
                         <p className="h-full lg:text-xl text-secondary dark:text-secondary-dark leading-normal">
                           People expect native apps to look and feel like their
@@ -400,14 +403,13 @@ export function HomeContent() {
             </div>
             <div className="px-5 lg:px-0 max-w-4xl mx-auto lg:text-center text-secondary dark:text-secondary-dark">
               <Para>
-                With React, you can be a web <i>and</i> a native developer. Your
-                team can ship to many platforms without sacrificing the user
-                experience. Your organization can bridge the platform silos, and
-                form teams that own entire features end-to-end.
+                React көмегімен сіз веб <i>және</i> нативті бағдарлаушы инженер
+                бола аласыз. Сіздің командаңыз пайдаланушы тәжірибесін жоғалтпай
+                көптеген платформаларға жеткізе алады.
               </Para>
               <div className="flex justify-start w-full lg:justify-center">
                 <CTA color="gray" icon="native" href="https://reactnative.dev/">
-                  Build for native platforms
+                  Нативті платформаларға құрастыру
                 </CTA>
               </div>
             </div>
@@ -418,10 +420,10 @@ export function HomeContent() {
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row px-5">
             <div className="max-w-3xl lg:max-w-7xl gap-5 flex flex-col lg:flex-row lg:px-5">
               <div className="w-full lg:w-6/12 max-w-3xl flex flex-col items-start justify-start lg:pl-5 lg:pr-10">
-                <Header>Upgrade when the future is ready</Header>
+                <Header>Болашақ уақыт дайын болғанда жаңартыңыз</Header>
                 <Para>
-                  React approaches changes with care. Every React commit is
-                  tested on business-critical surfaces with over a billion
+                  React болашақ өзгерістерге мұқият қарайды. Every React commit
+                  is tested on business-critical surfaces with over a billion
                   users. Over 100,000 React components at Meta help validate
                   every migration strategy.
                 </Para>
@@ -434,7 +436,7 @@ export function HomeContent() {
                   </Para>
                   <div className="hidden lg:flex justify-start w-full">
                     <CTA color="gray" icon="news" href="/blog">
-                      Read more React news
+                      Толығырақ React жаңалықтарын оқыңыз
                     </CTA>
                   </div>
                 </div>
@@ -442,7 +444,7 @@ export function HomeContent() {
               <div className="w-full lg:w-6/12">
                 <p className="uppercase tracking-wide font-bold text-sm text-tertiary dark:text-tertiary-dark flex flex-row gap-2 items-center mt-5 lg:-mt-2 w-full">
                   <IconChevron />
-                  Latest React News
+                  Соңғы React жаңалықтары
                 </p>
                 <div className="flex-col sm:flex-row flex-wrap flex gap-5 text-left my-5">
                   <div className="flex-1 min-w-[40%]">
@@ -460,7 +462,7 @@ export function HomeContent() {
                 </div>
                 <div className="flex lg:hidden justify-start w-full">
                   <CTA color="gray" icon="news" href="/blog">
-                    Read more React news
+                    Толығырақ React жаңалықтарын оқыңыз
                   </CTA>
                 </div>
               </div>
@@ -473,13 +475,16 @@ export function HomeContent() {
             <div className="mx-auto flex flex-col max-w-4xl">
               <Center>
                 <Header>
-                  Join a community <br className="hidden lg:inline" />
-                  of millions
+                  Миллиондар қауымдастығына <br className="hidden lg:inline" />
+                  қосылыңыз
                 </Header>
                 <Para>
                   You’re not alone. Two million developers from all over the
                   world visit the React docs every month. React is something
-                  that people and teams can agree on.
+                  that people and teams can agree on. Сіз жалғыз емессіз. Ай
+                  сайын React құжаттарына әлемнің түкпір-түкпірінен екі миллион
+                  әзірлеушілер кіреді. Реакция - бұл адамдар мен командалар
+                  келісе алатын нәрсе.
                 </Para>
               </Center>
             </div>
@@ -502,15 +507,15 @@ export function HomeContent() {
           <div className="mt-20 px-5 lg:px-0 mb-6 max-w-4xl text-center text-opacity-80">
             <Logo className="text-link dark:text-link-dark w-24 lg:w-28 mb-10 lg:mb-8 mt-12 h-auto mx-auto self-start" />
             <Header>
-              Welcome to the <br className="" />
-              React community
+              React қауымдастығынызға <br className="" />
+              қош келдіңіз
             </Header>
             <ButtonLink
               href={'/learn'}
               type="primary"
               size="lg"
-              label="Take the Tutorial">
-              Get Started
+              label="Тәлім алу">
+              Бастау
             </ButtonLink>
           </div>
         </Section>
