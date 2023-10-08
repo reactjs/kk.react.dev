@@ -413,7 +413,7 @@ export function HomeContent() {
         <Section background="right-card">
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row px-5">
             <div className="max-w-3xl lg:max-w-7xl gap-5 flex flex-col lg:flex-row lg:px-5">
-              <div className="w-full lg:w-6/12 max-w-3xl flex flex-col items-start justify-start lg:pl-5 lg:pr-10">
+              <div className="w-full lg:w-6/12 max-w-3xl flex flex-col items-start justify-start lg:ps-5 lg:pe-10">
                 <Header>Болашақ дайын болғанда жаңартыңыз</Header>
                 <Para>
                   React болашақ өзгерістерге мұқият қарайды. Әрбір React-қа
