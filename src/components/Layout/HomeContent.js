@@ -388,7 +388,6 @@ export function HomeContent() {
                           интерфейстері <i>шынымен</i> нативті. Бұл веб көрініс
                           емес — сіздің React компоненттеріңіз платформамен
                           қамтамасыз етілген нақты Android және iOS көрініс.
-
                         </p>
                       </div>
                     </div>
@@ -416,7 +415,6 @@ export function HomeContent() {
             <div className="max-w-3xl lg:max-w-7xl gap-5 flex flex-col lg:flex-row lg:px-5">
               <div className="w-full lg:w-6/12 max-w-3xl flex flex-col items-start justify-start lg:ps-5 lg:pe-10">
                 <Header>Болашақ дайын болғанда жаңартыңыз</Header>
-
                 <Para>
                   React болашақ өзгерістерге мұқият қарайды. Әрбір React-қа
                   жасаған коммит миллиардтан астам пайдаланушысы бар бизнес үшін
