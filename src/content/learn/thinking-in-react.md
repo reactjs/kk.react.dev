@@ -1,18 +1,18 @@
 ---
-title: Thinking in React
+title: React философиясы
 ---
 
 <Intro>
 
-React can change how you think about the designs you look at and the apps you build. When you build a user interface with React, you will first break it apart into pieces called *components*. Then, you will describe the different visual states for each of your components. Finally, you will connect your components together so that the data flows through them. In this tutorial, we’ll guide you through the thought process of building a searchable product data table with React.
+React сіз жоспарлайтын жобалар мен құрастырған қосымшалар туралы қөзқарасынызды өзгерте алады. React көмегімен пайдаланушы интерфейсін құрастырған кезде алдымен оны *компонет* атты бөліктерге бөлесіз. Содан кейін сіз компоненттеріңіздің әрқайсысын әртүрлі визуалды күйе сипаттайсыз. Соңында, деректер олардың бойымен әрекеттесуі үшін компоненттерді біріктіресіз. Бұл нұсқауда біз React арқылы іздеуге болатын өнімдер кестесін жасау мысалын қарастырамыз.
 
 </Intro>
 
-## Start with the mockup {/*start-with-the-mockup*/}
+## Макеттен бастайық {/*start-with-the-mockup*/}
 
-Imagine that you already have a JSON API and a mockup from a designer.
+Сізде JSON API және дизайнердің макеті бар деп елестетіп көріңіз.
 
-The JSON API returns some data that looks like this:
+JSON API келесідей деректерді қайтарады:
 
 ```json
 [
@@ -25,25 +25,25 @@ The JSON API returns some data that looks like this:
 ]
 ```
 
-The mockup looks like this:
+Макет көрінісі мынадай:
 
 <img src="/images/docs/s_thinking-in-react_ui.png" width="300" style={{margin: '0 auto'}} />
 
-To implement a UI in React, you will usually follow the same five steps.
+React қосымшасымен UI жасаған кезде әдетте бірдей бес қадамды орындайсыз.
 
-## Step 1: Break the UI into a component hierarchy {/*step-1-break-the-ui-into-a-component-hierarchy*/}
+## 1-қадам: UI құрамдас бөліктерге бөліңіз {/*step-1-break-the-ui-into-a-component-hierarchy*/}
 
-Start by drawing boxes around every component and subcomponent in the mockup and naming them. If you work with a designer, they may have already named these components in their design tool. Ask them!
+Макетті әрбір компонент пен қосалқы компоненттерге іріктеп оларға атау беруден бастаңыз. Дизайнермен жұмыс жасасаңыз, олар дизайн құралында компоненттерді атаған болуы мүмкін. Олардан біліңіз!
 
-Depending on your background, you can think about splitting up a design into components in different ways:
+Сіз өзіңіздің тәжірибеңізге байланысты дизайнды компонентерге бөлyге болытын жолдар:
 
-* **Programming**--use the same techniques for deciding if you should create a new function or object. One such technique is the [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), that is, a component should ideally only do one thing. If it ends up growing, it should be decomposed into smaller subcomponents. 
-* **CSS**--consider what you would make class selectors for. (However, components are a bit less granular.)
-* **Design**--consider how you would organize the design's layers.
+* **Программалау**--қарапайым функцияны немесе объект жасау туралы шешім қабылдаған кездегі тәсілді қолданыңыз. Техниканың бірі [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), бір компонент бір тапсырманы орындауы тиіс. Егер функционал уақыт өте келе ұлғайса, оны кішірек ішкі құрамдастарға бөлу керек.
+* **CSS**--ойлаңыз, неліктен класс селектірін жасайтындығыңызды. (Дегенмен компоненттер соншалықты кішірейтілмегенін есте сақтаңыз.)
+* **Дизайн**--дизайн қабаттарын қалай ұйымдастыратыныңызды ойлаңыз.
 
-If your JSON is well-structured, you'll often find that it naturally maps to the component structure of your UI. That's because UI and data models often have the same information architecture--that is, the same shape. Separate your UI into components, where each component matches one piece of your data model.
+Егер сіздің JSON жақсы құрылымдалған болса, cіз оның UI компонент құрылымына табиғи түрде сәйкес келетінін жиі байқайсыз. Себебі UI және деректер үлгілері жиі бірдей ақпараттық архитектураға, яғни бірдей пішінге ие болады. Пайдаланушы интерфейсін компонентерге бөліңіз, олардың әрқайсысы деректер үлгісінің бір бөлігін көрсетеді.
 
-There are five components on this screen:
+Бұл экранда бес компонент бар:
 
 <FullWidth>
 
@@ -51,19 +51,19 @@ There are five components on this screen:
 
 <img src="/images/docs/s_thinking-in-react_ui_outline.png" width="500" style={{margin: '0 auto'}} />
 
-1. `FilterableProductTable` (grey) contains the entire app.
-2. `SearchBar` (blue) receives the user input.
-3. `ProductTable` (lavender) displays and filters the list according to the user input.
-4. `ProductCategoryRow` (green) displays a heading for each category.
-5. `ProductRow`	(yellow) displays a row for each product.
+1. `FilterableProductTable` (сұр) бүкіл қосымшаны қамтиды.
+2. `SearchBar` (көк) пайдаланушы енгізуін қабылдайды.
+3. `ProductTable` (лаванда) пайдаланушы енгізуіне сәйкес тізімді көрсетеді және фильтрлейди.
+4. `ProductCategoryRow` (жасыл) санат тақырыптарын көрсетеді.
+5. `ProductRow`	(сары) жеке өнімдерді көрсетеді.
 
 </CodeDiagram>
 
 </FullWidth>
 
-If you look at `ProductTable` (lavender), you'll see that the table header (containing the "Name" and "Price" labels) isn't its own component. This is a matter of preference, and you could go either way. For this example, it is a part of `ProductTable` because it appears inside the `ProductTable`'s list. However, if this header grows to be complex (e.g., if you add sorting), you can move it into its own `ProductTableHeader` component.
+Егер сіз `ProductTable` (лаванда) қарасаңыз, кесте тақырыбы ("Name" және "Price" белгілері бар) оның жеке компонент бөлігі емес екенін көресіз. Оны ажырату керек пе, жоқ па, бұл жеке таңдау. Бұл мысалда ол "ProductTable" бөлігі болып табылады, себебі ол "ProductTable" тізімінде. Дегенмен, болашақта тақырыпқа жаңа функционалдылықты қоссаңыз (мысалы, өнімдерді сұрыптау мүмкіндігі), оны оқшау `ProductTableHeader` құрамдас бөлігіне шығаруға болады.
 
-Now that you've identified the components in the mockup, arrange them into a hierarchy. Components that appear within another component in the mockup should appear as a child in the hierarchy:
+Макеттегі компоненттерді анықтағаннан кейін, оларды иерархияға орналастырыңыз. Басқа компоненттердін бөлігі болып табылатын компонент бөліктер иерархияда еншілес болады:
 
 * `FilterableProductTable`
     * `SearchBar`
