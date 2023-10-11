@@ -251,28 +251,28 @@ React-те «модельдік» деректердің екі түрі бар:
 
 </DeepDive>
 
-## Step 4: Identify where your state should live {/*step-4-identify-where-your-state-should-live*/}
+## 4-қадам: Сіздің күйініз қай жерде болуы керек екенін анықтаңыз {/*step-4-identify-where-your-state-should-live*/}
 
-After identifying your app’s minimal state data, you need to identify which component is responsible for changing this state, or *owns* the state. Remember: React uses one-way data flow, passing data down the component hierarchy from parent to child component. It may not be immediately clear which component should own what state. This can be challenging if you’re new to this concept, but you can figure it out by following these steps!
+Қосымшаның күй деректерін анықтағаннан кейін, күйді өзгертуге қандай компонент жауапты немесе оған *иелік* ететінін анықтау керек. Есіңізде болсын: React бір жақты деректер ағынын пайдаланады, деректерді иерархия бойынша негізгі компоненттен еншілес компоненқа жібереді. Қай компонент қандай күйге ие болуы керектігі бірден анық болмауы мүмкін. Егер сіз бұл тұжырымдамамен таныс болсаңыз, бұл қиын болуы мүмкін, бірақ оны мына қадамдарды орындау арқылы анықтауға болады!
 
-For each piece of state in your application:
+Әрбір cіздің қосымшаныздың күйі үшін: 
 
-1. Identify *every* component that renders something based on that state.
-2. Find their closest common parent component--a component above them all in the hierarchy.
-3. Decide where the state should live:
-    1. Often, you can put the state directly into their common parent.
-    2. You can also put the state into some component above their common parent.
-    3. If you can't find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common parent component.
+1. Осы күйге негізделген көрсететін *барлық* компоненттерді анықтаңыз.
+2. Олардың ең жақын ортақ негізгі компонент бөлігін табыңыз - иерархиядағы барлығынан жоғары компонент.
+3. Күйініз қай жерде болуы керектігін анықтаңыз::
+    1. Көбінесе күйді олардың жалпы компонентіне қоюға болады.
+    2. Сондай-ақ, күйді компоненттердің кез келгеніне олардың ортақ негізгі компонентінің үстіне қоюға болады.
+    3. Егер сәйкес компонентті таба алмасаңыз, күйді сақтау үшін ғана жаңа компонент жасаңыз және оны жалпы негізгі компоненттін үстінгі иерархиясына орналастырыныз.
 
-In the previous step, you found two pieces of state in this application: the search input text, and the value of the checkbox. In this example, they always appear together, so it makes sense to put them into the same place.
+Алдыңғы қадамда демо қосымшада сіз екі күй бөлігін таптыңыз: іздеу енгізу мәтіні және чекбокс мәні. Бұл мысалда олар әрқашан бірге пайда болады, сондықтан оларды бір жерге қою мағынасы бар.
 
-Now let's run through our strategy for them:
+Енді олар үшін стратегиямызды қарастырайық:
 
-1. **Identify components that use state:**
-    * `ProductTable` needs to filter the product list based on that state (search text and checkbox value). 
-    * `SearchBar` needs to display that state (search text and checkbox value).
-1. **Find their common parent:** The first parent component both components share is `FilterableProductTable`.
-2. **Decide where the state lives**: We'll keep the filter text and checked state values in `FilterableProductTable`.
+1. **Күйлерді қолданатын компоненттерді анықтаңыз:**
+    * `ProductTable` күйлерге негізделген өнімдер тізімін фильтрлеу (іздеу сұрауы және чекбокс ұяшығының мәні).
+    * `SearchBar` сол күйді көрсету керек (іздеу мәтіні және чекбокс мәні).
+1. **Олардың ортақ негізгі компонентін табыңыз:** The first parent component both components share is `FilterableProductTable`.
+2. **Күй қайда тұратынын шешіңіз**: We'll keep the filter text and checked state values in `FilterableProductTable`.
 
 So the state values will live in `FilterableProductTable`. 
 
