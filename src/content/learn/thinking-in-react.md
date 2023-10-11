@@ -208,46 +208,46 @@ td {
 
 </Pitfall>
 
-## Step 3: Find the minimal but complete representation of UI state {/*step-3-find-the-minimal-but-complete-representation-of-ui-state*/}
+## 3-қадам: UI күйінің минималды, бірақ толық көрінісін анықтаңыз {/*step-3-find-the-minimal-but-complete-representation-of-ui-state*/}
 
-To make the UI interactive, you need to let users change your underlying data model. You will use *state* for this.
+UI-ды интерактивті ету үшін пайдаланушыларға негізгі деректер үлгісін өзгертуге рұқсат беру керек. Бұл үшін * күйді * пайдаланасыз.
 
-Think of state as the minimal set of changing data that your app needs to remember. The most important principle for structuring state is to keep it [DRY (Don't Repeat Yourself).](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) Figure out the absolute minimal representation of the state your application needs and compute everything else on-demand. For example, if you're building a shopping list, you can store the items as an array in state. If you want to also display the number of items in the list, don't store the number of items as another state value--instead, read the length of your array.
+Күй туралы айтқанда біздін қосымшамызда өзгеретін деректердің ең аз жиынтығын айтамыз. Оны құрудың ең бастысы - принципті [DRY (Don't Repeat Yourself).](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) Қосымшаңызға қажетті ең аз талап етілетін күйді анықтаңыз. Қалғанының қажетінше есептеңіз. Мысалы, сатып алу тізімін жасап жатсаңыз, элементтерді массив ретінде күйде сақтауға болады. Тізімдегі элементтердің санын көрсеткіңіз келсе, элементтер санын басқа күй мәні ретінде сақтамаңыз -- оның орнына массивіңіздің ұзындығын есептеніз.
 
-Now think of all of the pieces of data in this example application:
+Енді осы мысалдағы барлық деректер бөліктерін ойлап көріңіз:
 
-1. The original list of products
-2. The search text the user has entered
-3. The value of the checkbox
-4. The filtered list of products
+1. Өнімдердің түпнұсқалық тізімі
+2. Пайдаланушы енгізген іздеу мәтіні
+3. Чекбокстың мәні
+4. Өнімдердің фильтрленген тізімі
 
-Which of these are state? Identify the ones that are not:
+Бұлардың қайсысы күй eмесін анықтаңыз:
 
-* Does it **remain unchanged** over time? If so, it isn't state.
-* Is it **passed in from a parent** via props? If so, it isn't state.
-* **Can you compute it** based on existing state or props in your component? If so, it *definitely* isn't state!
+* Уақыт өте келе **өзгеріссіз** қала ма? Олай болса, бұл деректер күйде сақталмауы керек.
+* Олар пропс арқылы негізгі **компоненттен берілді** ме? Олай болса, бұл деректер күйде сақталмауы керек.
+* Оларды компоненттегі бар күйлерден немесе деректемелер негізінде **есептей аласыз ба**? Олай болса, бұл деректер *міндетті түрде* күйде сақталмауы керек!
 
-What's left is probably state.
+Ал қалған деректер мүмкін күйде сақталуы керек.
 
-Let's go through them one by one again:
+Оларды тағы да қарастырайық:
 
-1. The original list of products is **passed in as props, so it's not state.** 
-2. The search text seems to be state since it changes over time and can't be computed from anything.
-3. The value of the checkbox seems to be state since it changes over time and can't be computed from anything.
-4. The filtered list of products **isn't state because it can be computed** by taking the original list of products and filtering it according to the search text and value of the checkbox.
+1. Өнімдердің бастапқы тізімі **пропс ретінде берілген, сондықтан ол күй емес.**
+2. Іздеу мәтіні күй болып көрінеді, өйткені ол уақыт өте өзгереді және ештеңеден есептелмейді.
+3. Чекбокстың мәні күй болып көрінеді, себебі ол уақыт өте өзгереді және ештеңеден есептелмейді.
+4. Өнімдердің фильтр тізімі **күй емес, өйткені оны есептеуге болады**, іздеу мен чекбокс мәнін пайдаланып тізімді реттейміз.
 
-This means only the search text and the value of the checkbox are state! Nicely done!
+Тек іздеу мен чекбокс мәні күй екенін анықтап алдық! Керемет!
 
 <DeepDive>
 
-#### Props vs State {/*props-vs-state*/}
+#### Пропс пен күйдің айырмашылығы {/*props-vs-state*/}
 
-There are two types of "model" data in React: props and state. The two are very different:
+React-те «модельдік» деректердің екі түрі бар: пропс және күй. Олар бір-бірінен айырмашылықтары бар:
 
-* [**Props** are like arguments you pass](/learn/passing-props-to-a-component) to a function. They let a parent component pass data to a child component and customize its appearance. For example, a `Form` can pass a `color` prop to a `Button`.
-* [**State** is like a component’s memory.](/learn/state-a-components-memory) It lets a component keep track of some information and change it in response to interactions. For example, a `Button` might keep track of `isHovered` state.
+* [**Пропс** функцияға беретін аргументтер сияқты.](/learn/passing-props-to-a-component) Олар негізгі компоненттен еншілес компонентке дерек жіберуге және оның көрінісін өзгертуге мүмкіндік береді. Мысалы, `Form` `Button` компонентіне `color` пропсын жібере алады.
+* [**Күй** компоненттін жадысы сияқты.](/learn/state-a-components-memory) Ол компонентке деректерді сақтауға, бақылауға және оны өзгертуге мүмкіндік береді. Мысалы, `Button` `isHovered` күйі болуы мүмкін.
 
-Props and state are different, but they work together. A parent component will often keep some information in state (so that it can change it), and *pass it down* to child components as their props. It's okay if the difference still feels fuzzy on the first read. It takes a bit of practice for it to really stick!
+Пропс мен күй әртүрлі, бірақ олар бірге жұмыс істейді. Негізгі компонент ақпаратты көбінесе күйде сақтайды (оны өзгерте алады) және оны қосалқы компонент бөліктерге *жібереді*. Бірінші үйренгенде айырмашылықтары әлі де бұлыңғыр болуы мүмкін. Біраз тәжірибемен айырмашылық айқынырақ болады!
 
 </DeepDive>
 
