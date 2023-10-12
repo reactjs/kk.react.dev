@@ -1,25 +1,25 @@
 ---
-title: Installation
+title: Орнату
 ---
 
 <Intro>
 
-React has been designed from the start for gradual adoption. You can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to an HTML page, or start a complex React-powered app, this section will help you get started.
+React басынан бастап біртіндеп бейімделуді ескере отырып құрастырылған. Өз қажетінше cіз тек қажет React функциясын ғана пайдалана аласыз. Бұл бөлімдегі ақпарат React-пен алғаш танысқанда да, қарапайым динамикалық HTML бетін жасағанда немесе күрделі React қосымшасын жобалау кезінде де пайдалы.
 
 </Intro>
 
 <YouWillLearn isChapter={true}>
 
-* [How to start a new React project](/learn/start-a-new-react-project)
-* [How to add React to an existing project](/learn/add-react-to-an-existing-project)
-* [How to set up your editor](/learn/editor-setup)
-* [How to install React Developer Tools](/learn/react-developer-tools)
+* [Жаңа React жобасын қалай бастау керек](/learn/start-a-new-react-project)
+* [Бар жобаға React-тi қалай қосуға болады](/learn/add-react-to-an-existing-project)
+* [Код редакторынызды қалай баптауға болады](/learn/editor-setup)
+* [React Developer Tools құралын орнату жолы](/learn/react-developer-tools)
 
 </YouWillLearn>
 
-## Try React {/*try-react*/}
+## React-тi қолданып көрy {/*try-react*/}
 
-You don't need to install anything to play with React. Try editing this sandbox!
+React-тi қолданып көру үшін ештеңе орнатудың қажеті жоқ. Құмжәшігте кодты өңдеңіз!
 
 <Sandpack>
 
@@ -35,23 +35,23 @@ export default function App() {
 
 </Sandpack>
 
-You can edit it directly or open it in a new tab by pressing the "Fork" button in the upper right corner.
+Дәл осы жерде код жазуға немесе жоғарғы оң жақ бұрыштағы «Fork» түймесін басу арқылы кодты жаңа табта ашуға болады.
 
-Most pages in the React documentation contain sandboxes like this. Outside of the React documentation, there are many online sandboxes that support React: for example, [CodeSandbox](https://codesandbox.io/s/new), [StackBlitz](https://stackblitz.com/fork/react), or [CodePen.](https://codepen.io/pen?&editors=0010&layout=left&prefill_data_id=3f4569d1-1b11-4bce-bd46-89090eed5ddb)
+Мұндай құмжәшіктер React құжаттамасының беттерінің көпшілігінде қолжетімді. React құжаттамасынан басқа, React-ті қолдайтын көптеген онлайн құмжәшіктері бар: мысалы, [CodeSandbox](https://codesandbox.io/s/new), [StackBlitz](https://stackblitz.com/fork/react), немесе [CodePen.](https://codepen.io/pen?&editors=0010&layout=left&prefill_data_id=3f4569d1-1b11-4bce-bd46-89090eed5ddb)
 
-### Try React locally {/*try-react-locally*/}
+### Локальде React-тi қолданып көріңіз {/*try-react-locally*/}
 
-To try React locally on your computer, [download this HTML page.](https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html) Open it in your editor and in your browser!
+Локальде компьютерінізде React-пен жұмыс жасап көру үшін осы [HTML бетін жүктеп алыңыз](https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html). Оны редакторда және браузерде ашыңыз!
 
-## Start a new React project {/*start-a-new-react-project*/}
+## Жаңа React жобасын бастаңыз {/*start-a-new-react-project*/}
 
-If you want to build an app or a website fully with React, [start a new React project.](/learn/start-a-new-react-project)
+Егер сіз React көмегімен қосымшаны немесе веб-сайтты толығымен құрғыныз келсе, [жаңа React жобасын бастаңыз.](/learn/start-a-new-react-project)
 
-## Add React to an existing project {/*add-react-to-an-existing-project*/}
+## Бар жобаға React-тi қосыңыз {/*add-react-to-an-existing-project*/}
 
-If want to try using React in your existing app or a website, [add React to an existing project.](/learn/add-react-to-an-existing-project)
+Егер бұрыннан бар қосымшада немесе веб-сайтта React қолданып көргіңіз келсе, [бар жобаға React-ті қосыңыз.](/learn/add-react-to-an-existing-project)
 
-## Next steps {/*next-steps*/}
+## Келесі қадамдар {/*next-steps*/}
 
-Head to the [Quick Start](/learn) guide for a tour of the most important React concepts you will encounter every day.
+Күнделікті кездесетін ең маңызды ұғымдармен танысу үшін [Жылдам бастау](/learn) бөліміне өтіңіз.
 
