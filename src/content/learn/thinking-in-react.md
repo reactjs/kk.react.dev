@@ -1,18 +1,18 @@
 ---
-title: Thinking in React
+title: React философиясы
 ---
 
 <Intro>
 
-React can change how you think about the designs you look at and the apps you build. When you build a user interface with React, you will first break it apart into pieces called *components*. Then, you will describe the different visual states for each of your components. Finally, you will connect your components together so that the data flows through them. In this tutorial, we’ll guide you through the thought process of building a searchable product data table with React.
+React сіз жоспарлайтын жобалар мен құрастырған қосымшалар туралы қөзқарасынызды өзгерте алады. React көмегімен пайдаланушы интерфейсін құрастырған кезде алдымен оны *компонет* атты бөліктерге бөлесіз. Содан кейін сіз компоненттеріңіздің әрқайсысын әртүрлі визуалды күйлерді сипаттайсыз. Соңында, деректер олардың бойымен әрекеттесуі үшін компоненттерді біріктіресіз. Бұл нұсқауда біз React арқылы іздеуге болатын өнімдер кестесін жасау мысалын қарастырамыз.
 
 </Intro>
 
-## Start with the mockup {/*start-with-the-mockup*/}
+## Макеттен бастайық {/*start-with-the-mockup*/}
 
-Imagine that you already have a JSON API and a mockup from a designer.
+Сізде JSON API және дизайнердің макеті бар деп елестетіп көріңіз.
 
-The JSON API returns some data that looks like this:
+JSON API келесідей деректерді қайтарады:
 
 ```json
 [
@@ -25,25 +25,25 @@ The JSON API returns some data that looks like this:
 ]
 ```
 
-The mockup looks like this:
+Макет көрінісі мынадай:
 
 <img src="/images/docs/s_thinking-in-react_ui.png" width="300" style={{margin: '0 auto'}} />
 
-To implement a UI in React, you will usually follow the same five steps.
+React қосымшасымен UI жасаған кезде әдетте бірдей бес қадамды орындайсыз.
 
-## Step 1: Break the UI into a component hierarchy {/*step-1-break-the-ui-into-a-component-hierarchy*/}
+## 1-қадам: UI құрамдас бөліктерге бөліңіз {/*step-1-break-the-ui-into-a-component-hierarchy*/}
 
-Start by drawing boxes around every component and subcomponent in the mockup and naming them. If you work with a designer, they may have already named these components in their design tool. Ask them!
+Макетті әрбір компонент пен қосалқы компоненттерге іріктеп оларға атау беруден бастаңыз. Дизайнермен жұмыс жасасаңыз, олар дизайн құралында компоненттерді атаған болуы мүмкін. Олардан біліңіз!
 
-Depending on your background, you can think about splitting up a design into components in different ways:
+Сіз өзіңіздің тәжірибеңізге байланысты дизайнды компонентерге бөлyге болытын жолдар:
 
-* **Programming**--use the same techniques for deciding if you should create a new function or object. One such technique is the [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), that is, a component should ideally only do one thing. If it ends up growing, it should be decomposed into smaller subcomponents. 
-* **CSS**--consider what you would make class selectors for. (However, components are a bit less granular.)
-* **Design**--consider how you would organize the design's layers.
+* **Программалау**--қарапайым функцияны немесе объект жасау туралы шешім қабылдаған кездегі тәсілді қолданыңыз. Техниканың бірі [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), бір компонент бір тапсырманы орындауы тиіс. Егер функционал уақыт өте келе ұлғайса, оны кішірек ішкі құрамдастарға бөлу керек.
+* **CSS**--ойлаңыз, неліктен класс селектірін жасайтындығыңызды. (Дегенмен компоненттер соншалықты кішірейтілмегенін есте сақтаңыз.)
+* **Дизайн**--дизайн қабаттарын қалай ұйымдастыратыныңызды ойлаңыз.
 
-If your JSON is well-structured, you'll often find that it naturally maps to the component structure of your UI. That's because UI and data models often have the same information architecture--that is, the same shape. Separate your UI into components, where each component matches one piece of your data model.
+Егер сіздің JSON жақсы құрылымдалған болса, cіз оның UI компонент құрылымына табиғи түрде сәйкес келетінін жиі байқайсыз. Себебі UI және деректер үлгілері жиі бірдей ақпараттық архитектураға, яғни бірдей пішінге ие болады. Пайдаланушы интерфейсін компонентерге бөліңіз, олардың әрқайсысы деректер үлгісінің бір бөлігін көрсетеді.
 
-There are five components on this screen:
+Бұл экранда бес компонент бар:
 
 <FullWidth>
 
@@ -51,19 +51,19 @@ There are five components on this screen:
 
 <img src="/images/docs/s_thinking-in-react_ui_outline.png" width="500" style={{margin: '0 auto'}} />
 
-1. `FilterableProductTable` (grey) contains the entire app.
-2. `SearchBar` (blue) receives the user input.
-3. `ProductTable` (lavender) displays and filters the list according to the user input.
-4. `ProductCategoryRow` (green) displays a heading for each category.
-5. `ProductRow`	(yellow) displays a row for each product.
+1. `FilterableProductTable` (сұр) бүкіл қосымшаны қамтиды.
+2. `SearchBar` (көк) пайдаланушы енгізуін қабылдайды.
+3. `ProductTable` (лаванда) пайдаланушы енгізуіне сәйкес тізімді көрсетеді және фильтрлейди.
+4. `ProductCategoryRow` (жасыл) санат тақырыптарын көрсетеді.
+5. `ProductRow`	(сары) жеке өнімдерді көрсетеді.
 
 </CodeDiagram>
 
 </FullWidth>
 
-If you look at `ProductTable` (lavender), you'll see that the table header (containing the "Name" and "Price" labels) isn't its own component. This is a matter of preference, and you could go either way. For this example, it is a part of `ProductTable` because it appears inside the `ProductTable`'s list. However, if this header grows to be complex (e.g., if you add sorting), you can move it into its own `ProductTableHeader` component.
+Егер сіз `ProductTable` (лаванда) қарасаңыз, кесте тақырыбы ("Name" және "Price" белгілері бар) оның жеке компонент бөлігі емес екенін көресіз. Оны ажырату керек пе, жоқ па, бұл жеке таңдау. Бұл мысалда ол "ProductTable" бөлігі болып табылады, себебі ол "ProductTable" тізімінде. Дегенмен, болашақта тақырыпқа жаңа функционалдылықты қоссаңыз (мысалы, өнімдерді сұрыптау мүмкіндігі), оны оқшау `ProductTableHeader` құрамдас бөлігіне шығаруға болады.
 
-Now that you've identified the components in the mockup, arrange them into a hierarchy. Components that appear within another component in the mockup should appear as a child in the hierarchy:
+Макеттегі компоненттерді анықтағаннан кейін, оларды иерархияға орналастырыңыз. Басқа компоненттердін бөлігі болып табылатын компонент бөліктер иерархияда еншілес болады:
 
 * `FilterableProductTable`
     * `SearchBar`
@@ -71,13 +71,17 @@ Now that you've identified the components in the mockup, arrange them into a hie
         * `ProductCategoryRow`
         * `ProductRow`
 
-## Step 2: Build a static version in React {/*step-2-build-a-static-version-in-react*/}
+## 2-қадам: React колдынып статикалық нұсқаны жасаңыз {/*step-2-build-a-static-version-in-react*/}
 
-Now that you have your component hierarchy, it's time to implement your app. The most straightforward approach is to build a version that renders the UI from your data model without adding any interactivity... yet! It's often easier to build the static version first and add interactivity later. Building a static version requires a lot of typing and no thinking, but adding interactivity requires a lot of thinking and not a lot of typing.
+Енді барлық компонент бөліктер иерархиялық ретпен орналастырылғандықтан, қосымшаны жүзеге асыратын уақыт келді. Ең қарапайым жолы -- интерфейсті деректер үлгісімен толтырып ешбір интерактивті қоспай көрсететін нұсқаны құру... Алдымен статикалық нұсқаны құрастыру және интерактивті кейінірек қосу әдетте оңай. Статикалық қосымшаны жазу көп теруді және өте аз ойлауды қажет етеді, ал интерактивті қосу көп теруді емес, көп ойлауды қажет етеді.
 
-To build a static version of your app that renders your data model, you'll want to build [components](/learn/your-first-component) that reuse other components and pass data using [props.](/learn/passing-props-to-a-component) Props are a way of passing data from parent to child. (If you're familiar with the concept of [state](/learn/state-a-components-memory), don't use state at all to build this static version. State is reserved only for interactivity, that is, data that changes over time. Since this is a static version of the app, you don't need it.)
+Деректер үлгісін көрсететін компонент статикалық нұсқасын жасау үшін, бізге басқа компоненттерді қолданатын және мәліметтерді өткізетін [пропс](/learn/passing-props-to-a-component) [компоненттерді](/learn/your-first-component) жасау керекпіз. 
 
-You can either build "top down" by starting with building the components higher up in the hierarchy (like `FilterableProductTable`) or "bottom up" by working from components lower down (like `ProductRow`). In simpler examples, it’s usually easier to go top-down, and on larger projects, it’s easier to go bottom-up.
+Пропс ұғынығы негізгі (parent) компоненттен еншілес (child) компонентке деректерді жіберу тәсілi.
+
+(Күй ұғымымен таныс болсаңыз, бұл статикалық нұсқаны құру үшін [күйді](/learn/state-a-components-memory) қолданбаймыз. Күй тек интерактивтілік, яғни уақыт өте келе өзгеретін деректер үшін керек. Бұл жасап жатқан мысал қосымша статикалық нұсқа болғандықтан күй қажет емес.)
+
+Компонент бөліктерді иерархияда жоғарырақ құрудан бастау арқылы "жоғарыдан төменге" ("FilterableProductTable") немесе төменгі компонентерден ("ProductRow") "төменнен жоғарыға" сияқты тәсілдер бар. Қарапайым қосымшаларда иерархияда жоғары компоненттердер бастаған ыңғайлы. Қарапайым мысалдарда жоғарыдан төменге жобалау оңай. Күрделі қосымшаларда алдымен төменгі компонентерден жасап бастау ыңғайлырақ.
 
 <Sandpack>
 
@@ -194,86 +198,85 @@ td {
 ```
 
 </Sandpack>
+(Егер бұл код оңай емес болып көрінсе, алдымен [Жылдам бастауға](/learn/) өтіңіз!)
 
-(If this code looks intimidating, go through the [Quick Start](/learn/) first!)
-
-After building your components, you'll have a library of reusable components that render your data model. Because this is a static app, the components will only return JSX. The component at the top of the hierarchy (`FilterableProductTable`) will take your data model as a prop. This is called _one-way data flow_ because the data flows down from the top-level component to the ones at the bottom of the tree.
+Компоненттерді құрастырғаннан кейін деректер үлгісін көрсететін қайта пайдалануға болатын компонент кітапханасы болады. Бұл статикалық қосымша болғандықтан, компоненттер тек JSX қайтарады. Иерархияның жоғарғы жағындағы компонент (`FilterableProductTable`) деректерді пропс ретінде қабылдайды. Бұл _бір жақты деректер ағыны_ деп аталады, себебі деректер жоғары деңгейлі компонент бөліктен ағаштың төменгі жағындағы компоненттерге қолжетімді.
 
 <Pitfall>
 
-At this point, you should not be using any state values. That’s for the next step!
+Әзірге ешқандай күй мәндерін пайдаланбаймыз. Бұл келесі қадам үшін!
 
 </Pitfall>
 
-## Step 3: Find the minimal but complete representation of UI state {/*step-3-find-the-minimal-but-complete-representation-of-ui-state*/}
+## 3-қадам: UI күйінің минималды, бірақ толық көрінісін анықтаңыз {/*step-3-find-the-minimal-but-complete-representation-of-ui-state*/}
 
-To make the UI interactive, you need to let users change your underlying data model. You will use *state* for this.
+UI-ды интерактивті ету үшін пайдаланушыларға негізгі деректер үлгісін өзгертуге рұқсат беру керек. Бұл үшін * күйді * пайдаланасыз.
 
-Think of state as the minimal set of changing data that your app needs to remember. The most important principle for structuring state is to keep it [DRY (Don't Repeat Yourself).](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) Figure out the absolute minimal representation of the state your application needs and compute everything else on-demand. For example, if you're building a shopping list, you can store the items as an array in state. If you want to also display the number of items in the list, don't store the number of items as another state value--instead, read the length of your array.
+Күй туралы айтқанда біздін қосымшамызда өзгеретін деректердің ең аз жиынтығын айтамыз. Оны құрудың ең бастысы - принципті [DRY (Don't Repeat Yourself).](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) Қосымшаңызға қажетті ең аз талап етілетін күйді анықтаңыз. Қалғанының қажетінше есептеңіз. Мысалы, сатып алу тізімін жасап жатсаңыз, элементтерді массив ретінде күйде сақтауға болады. Тізімдегі элементтердің санын көрсеткіңіз келсе, элементтер санын басқа күй мәні ретінде сақтамаңыз -- оның орнына массивіңіздің ұзындығын есептеніз.
 
-Now think of all of the pieces of data in this example application:
+Енді осы мысалдағы барлық деректер бөліктерін ойлап көріңіз:
 
-1. The original list of products
-2. The search text the user has entered
-3. The value of the checkbox
-4. The filtered list of products
+1. Өнімдердің түпнұсқалық тізімі
+2. Пайдаланушы енгізген іздеу мәтіні
+3. Чекбокстың мәні
+4. Өнімдердің фильтрленген тізімі
 
-Which of these are state? Identify the ones that are not:
+Бұлардың қайсысы күй eмесін анықтаңыз:
 
-* Does it **remain unchanged** over time? If so, it isn't state.
-* Is it **passed in from a parent** via props? If so, it isn't state.
-* **Can you compute it** based on existing state or props in your component? If so, it *definitely* isn't state!
+* Уақыт өте келе **өзгеріссіз** қала ма? Олай болса, бұл деректер күйде сақталмауы керек.
+* Олар пропс арқылы негізгі **компоненттен берілді** ме? Олай болса, бұл деректер күйде сақталмауы керек.
+* Оларды компоненттегі бар күйлерден немесе деректемелер негізінде **есептей аласыз ба**? Олай болса, бұл деректер *міндетті түрде* күйде сақталмауы керек!
 
-What's left is probably state.
+Ал қалған деректер мүмкін күйде сақталуы керек.
 
-Let's go through them one by one again:
+Оларды тағы да қарастырайық:
 
-1. The original list of products is **passed in as props, so it's not state.** 
-2. The search text seems to be state since it changes over time and can't be computed from anything.
-3. The value of the checkbox seems to be state since it changes over time and can't be computed from anything.
-4. The filtered list of products **isn't state because it can be computed** by taking the original list of products and filtering it according to the search text and value of the checkbox.
+1. Өнімдердің бастапқы тізімі **пропс ретінде берілген, сондықтан ол күй емес.**
+2. Іздеу мәтіні күй болып көрінеді, өйткені ол уақыт өте өзгереді және ештеңеден есептелмейді.
+3. Чекбокстың мәні күй болып көрінеді, себебі ол уақыт өте өзгереді және ештеңеден есептелмейді.
+4. Өнімдердің фильтр тізімі **күй емес, өйткені оны есептеуге болады**, іздеу мен чекбокс мәнін пайдаланып тізімді реттейміз.
 
-This means only the search text and the value of the checkbox are state! Nicely done!
+Тек іздеу мен чекбокс мәні күй екенін анықтап алдық! Керемет!
 
 <DeepDive>
 
-#### Props vs State {/*props-vs-state*/}
+#### Пропс пен күйдің айырмашылығы {/*props-vs-state*/}
 
-There are two types of "model" data in React: props and state. The two are very different:
+React-те «модельдік» деректердің екі түрі бар: пропс және күй. Олар бір-бірінен айырмашылықтары бар:
 
-* [**Props** are like arguments you pass](/learn/passing-props-to-a-component) to a function. They let a parent component pass data to a child component and customize its appearance. For example, a `Form` can pass a `color` prop to a `Button`.
-* [**State** is like a component’s memory.](/learn/state-a-components-memory) It lets a component keep track of some information and change it in response to interactions. For example, a `Button` might keep track of `isHovered` state.
+* [**Пропс** функцияға беретін аргументтер сияқты.](/learn/passing-props-to-a-component) Олар негізгі компоненттен еншілес компонентке дерек жіберуге және оның көрінісін өзгертуге мүмкіндік береді. Мысалы, `Form` `Button` компонентіне `color` пропсын жібере алады.
+* [**Күй** компоненттін жадысы сияқты.](/learn/state-a-components-memory) Ол компонентке деректерді сақтауға, бақылауға және оны өзгертуге мүмкіндік береді. Мысалы, `Button` `isHovered` күйі болуы мүмкін.
 
-Props and state are different, but they work together. A parent component will often keep some information in state (so that it can change it), and *pass it down* to child components as their props. It's okay if the difference still feels fuzzy on the first read. It takes a bit of practice for it to really stick!
+Пропс мен күй әртүрлі, бірақ олар бірге жұмыс істейді. Негізгі компонент ақпаратты көбінесе күйде сақтайды (оны өзгерте алады) және оны қосалқы компонент бөліктерге *жібереді*. Бірінші үйренгенде айырмашылықтары әлі де бұлыңғыр болуы мүмкін. Біраз тәжірибемен айырмашылық айқынырақ болады!
 
 </DeepDive>
 
-## Step 4: Identify where your state should live {/*step-4-identify-where-your-state-should-live*/}
+## 4-қадам: Сіздің күйініз қай жерде болуы керек екенін анықтаңыз {/*step-4-identify-where-your-state-should-live*/}
 
-After identifying your app’s minimal state data, you need to identify which component is responsible for changing this state, or *owns* the state. Remember: React uses one-way data flow, passing data down the component hierarchy from parent to child component. It may not be immediately clear which component should own what state. This can be challenging if you’re new to this concept, but you can figure it out by following these steps!
+Қосымшаның күй деректерін анықтағаннан кейін, күйді өзгертуге қандай компонент жауапты немесе оған *иелік* ететінін анықтау керек. Есіңізде болсын: React бір жақты деректер ағынын пайдаланады, деректерді иерархия бойынша негізгі компоненттен еншілес компоненқа жібереді. Қай компонент қандай күйге ие болуы керектігі бірден анық болмауы мүмкін. Егер сіз бұл тұжырымдамамен таныс болсаңыз, бұл қиын болуы мүмкін, бірақ оны мына қадамдарды орындау арқылы анықтауға болады!
 
-For each piece of state in your application:
+Әрбір cіздің қосымшаныздың күйі үшін: 
 
-1. Identify *every* component that renders something based on that state.
-2. Find their closest common parent component--a component above them all in the hierarchy.
-3. Decide where the state should live:
-    1. Often, you can put the state directly into their common parent.
-    2. You can also put the state into some component above their common parent.
-    3. If you can't find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common parent component.
+1. Осы күйге негізделген көрсететін *барлық* компоненттерді анықтаңыз.
+2. Олардың ең жақын ортақ негізгі компонент бөлігін табыңыз - иерархиядағы барлығынан жоғары компонент.
+3. Күйініз қай жерде болуы керектігін анықтаңыз::
+    1. Көбінесе күйді олардың жалпы компонентіне қоюға болады.
+    2. Сондай-ақ, күйді компоненттердің кез келгеніне олардың ортақ негізгі компонентінің үстіне қоюға болады.
+    3. Егер сәйкес компонентті таба алмасаңыз, күйді сақтау үшін ғана жаңа компонент жасаңыз және оны жалпы негізгі компоненттін үстінгі иерархиясына орналастырыныз.
 
-In the previous step, you found two pieces of state in this application: the search input text, and the value of the checkbox. In this example, they always appear together, so it makes sense to put them into the same place.
+Алдыңғы қадамда демо қосымшада сіз екі күй бөлігін таптыңыз: іздеу енгізу мәтіні және чекбокс мәні. Бұл мысалда олар әрқашан бірге пайда болады, сондықтан оларды бір жерге қою мағынасы бар.
 
-Now let's run through our strategy for them:
+Енді олар үшін стратегиямызды қарастырайық:
 
-1. **Identify components that use state:**
-    * `ProductTable` needs to filter the product list based on that state (search text and checkbox value). 
-    * `SearchBar` needs to display that state (search text and checkbox value).
-1. **Find their common parent:** The first parent component both components share is `FilterableProductTable`.
-2. **Decide where the state lives**: We'll keep the filter text and checked state values in `FilterableProductTable`.
+1. **Күйлерді қолданатын компоненттерді анықтаңыз:**
+    * `ProductTable` күйлерге негізделген өнімдер тізімін фильтрлеу (іздеу сұрауы және чекбокс ұяшығының мәні).
+    * `SearchBar` сол күйді көрсету керек (іздеу мәтіні және чекбокс мәні).
+1. **Олардың ортақ негізгі компонентін табыңыз:** Екі компоненттің ортақ негізгі компоненті `FilterableProductTable` болып табылады.
+2. **Күй қайда тұратынын шешіңіз**: Фильтр мәтінін және чекбокс күй мәндерін `FilterableProductTable` ішінде сақтаймыз.
+ 
+Осылайша күй мәндері `FilterableProductTable` ішінде орналасады.
 
-So the state values will live in `FilterableProductTable`. 
-
-Add state to the component with the [`useState()` Hook.](/reference/react/useState) Hooks are special functions that let you "hook into" React. Add two state variables at the top of `FilterableProductTable` and specify their initial state:
+Компонент күйді [`useState()` Hook](/reference/react/useState) арқылы қосамыз. Хуктар - бұл React-ке қосылуға мүмкіндік беретін арнайы "ілмек" функциялар. `FilterableProductTable` жоғарғы жағына екі күй айнымалы мәнін қосыңыз және олардың бастапқы күйін көрсетіңіз:
 
 ```js
 function FilterableProductTable({ products }) {
@@ -281,7 +284,7 @@ function FilterableProductTable({ products }) {
   const [inStockOnly, setInStockOnly] = useState(false);  
 ```
 
-Then, pass `filterText` and `inStockOnly` to `ProductTable` and `SearchBar` as props:
+`ProductTable` және `SearchBar` компоненттеріне `filterText` және `inStockOnly` пропстарын жіберініз:
 
 ```js
 <div>
@@ -294,8 +297,7 @@ Then, pass `filterText` and `inStockOnly` to `ProductTable` and `SearchBar` as p
     inStockOnly={inStockOnly} />
 </div>
 ```
-
-You can start seeing how your application will behave. Edit the `filterText` initial value from `useState('')` to `useState('fruit')` in the sandbox code below. You'll see both the search input text and the table update:
+Қосымшаныз қалай әрекет ететінін көре бастай аласыз. Төмендегі құмжәшіг кодындағы `filterText` бастапқы мәнін `useState('')` мәнінен `useState('fruit')` мәніне өзгертіңіз. Іздеу жүйесінің мәтінін де, кестенің де өзгергенін көресіз:
 
 <Sandpack>
 
@@ -437,7 +439,7 @@ td {
 
 </Sandpack>
 
-Notice that editing the form doesn't work yet. There is a console error in the sandbox above explaining why:
+Форманы өңдеу әлі жұмыс істемейтінін ескеріңіз. Жоғарыдағы құмжәшігте консоль қатесі көрсетілген:
 
 <ConsoleBlock level="error">
 
@@ -445,7 +447,7 @@ You provided a \`value\` prop to a form field without an \`onChange\` handler. T
 
 </ConsoleBlock>
 
-In the sandbox above, `ProductTable` and `SearchBar` read the `filterText` and `inStockOnly` props to render the table, the input, and the checkbox. For example, here is how `SearchBar` populates the input value:
+Жоғарыдағы құмжәшігте `ProductTable` және `SearchBar`, енгізуді және чекбокс көрсету үшін "filterText" және "inStockOnly" пропсын оқиды. Мысалы, `SearchBar` енгізу мәнін қалай толтырады:
 
 ```js {1,6}
 function SearchBar({ filterText, inStockOnly }) {
@@ -456,17 +458,16 @@ function SearchBar({ filterText, inStockOnly }) {
         value={filterText} 
         placeholder="Search..."/>
 ```
+Дегенмен, теру сияқты пайдаланушы әрекеттеріне жауап беретін кодты әлі қосқан жоқсыз. Бұл сіздің соңғы қадамыңыз болады.
 
-However, you haven't added any code to respond to the user actions like typing yet. This will be your final step.
 
+## 5-қадам: Кері деректер ағынын қосыңыз {/*step-5-add-inverse-data-flow*/}
 
-## Step 5: Add inverse data flow {/*step-5-add-inverse-data-flow*/}
+Қазіргі уақытта компонентініз иерархияға төменге бағдарланған пропстармен мен күй негізінде рендірленеді. Дегенмен, пайдаланушы енгізуі негізінде күйдің өзгеруі үшін кері бағытта деректер ағынын қамтамасыз ету керек: иерархияның ең төменгі форма компоненттер `FilterableProductTable`-ге күйін жіберу керек.
 
-Currently your app renders correctly with props and state flowing down the hierarchy. But to change the state according to user input, you will need to support data flowing the other way: the form components deep in the hierarchy need to update the state in `FilterableProductTable`. 
+React-те деректер ағыны бір бағытты. Осыған байланысты деректерді екі жақты байланыстыруға қарағанда сәл көбірек код қажет. Іздеу өрісіне мәтін енгізсеніз немесе чекбоксты бассаныз, React елемейтінін көресіз. Осылай болуы қажет. `<input value={filterText} />` қойған кезде, сіз инпутті `мән` пропасын әрқашан `FilterableProductTable` ішінен жіберілген `filterText` күйіне тең етіп орнаттыңыз. `filterText` күйі орнатылмағандықтан, инпут ешқашан өзгермейді.
 
-React makes this data flow explicit, but it requires a little more typing than two-way data binding. If you try to type or check the box in the example above, you'll see that React ignores your input. This is intentional. By writing `<input value={filterText} />`, you've set the `value` prop of the `input` to always be equal to the `filterText` state passed in from `FilterableProductTable`. Since `filterText` state is never set, the input never changes.
-
-You want to make it so whenever the user changes the form inputs, the state updates to reflect those changes. The state is owned by `FilterableProductTable`, so only it can call `setFilterText` and `setInStockOnly`. To let `SearchBar` update the `FilterableProductTable`'s state, you need to pass these functions down to `SearchBar`:
+Іздеу формасы өзгерген кезде енгізу күйінің өзгеруін қалаймыз. Күй `FilterableProductTable` иелігінде, сондықтан ол тек `setFilterText` және `setInStockOnly` шақыра алады. `SearchBar` `FilterableProductTable` күйін жаңарту үшін осы функцияларды `SearchBar` ішіне жіберу керек:
 
 ```js {2,3,10,11}
 function FilterableProductTable({ products }) {
@@ -481,8 +482,7 @@ function FilterableProductTable({ products }) {
         onFilterTextChange={setFilterText}
         onInStockOnlyChange={setInStockOnly} />
 ```
-
-Inside the `SearchBar`, you will add the `onChange` event handlers and set the parent state from them:
+`SearchBar` сіз `onChange` оқиға өңдегіштерін қосасыз және олардан негізгі күйді орнатасыз:
 
 ```js {5}
 <input 
@@ -492,7 +492,7 @@ Inside the `SearchBar`, you will add the `onChange` event handlers and set the p
   onChange={(e) => onFilterTextChange(e.target.value)} />
 ```
 
-Now the application fully works!
+Енді қосымша толығымен жұмыс істейді!
 
 <Sandpack>
 
@@ -642,8 +642,8 @@ td {
 
 </Sandpack>
 
-You can learn all about handling events and updating state in the [Adding Interactivity](/learn/adding-interactivity) section.
+Оқиғаларды өңдеу және күйді жаңарту туралы барлық ақпаратты [Интерактивтілікті қосу](/learn/adding-interactivity) бөлімінде біле аласыз.
 
-## Where to go from here {/*where-to-go-from-here*/}
+## Ары қарай уйрену {/*where-to-go-from-here*/}
 
-This was a very brief introduction to how to think about building components and applications with React. You can [start a React project](/learn/installation) right now or [dive deeper on all the syntax](/learn/describing-the-ui) used in this tutorial.
+Бұл React көмегімен компонент пен қосымшаларды құру туралы қысқаша кіріспе болды. Сіз дәл қазір React арқылы жоба [бастай аласыз](/learn/installation) немесе осы оқулықта пайдаланылған [барлық синтаксисті тереңірек үйренуге](/learn/describing-the-ui) болады.
