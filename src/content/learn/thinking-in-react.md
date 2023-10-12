@@ -271,12 +271,12 @@ React-те «модельдік» деректердің екі түрі бар:
 1. **Күйлерді қолданатын компоненттерді анықтаңыз:**
     * `ProductTable` күйлерге негізделген өнімдер тізімін фильтрлеу (іздеу сұрауы және чекбокс ұяшығының мәні).
     * `SearchBar` сол күйді көрсету керек (іздеу мәтіні және чекбокс мәні).
-1. **Олардың ортақ негізгі компонентін табыңыз:** The first parent component both components share is `FilterableProductTable`.
-2. **Күй қайда тұратынын шешіңіз**: We'll keep the filter text and checked state values in `FilterableProductTable`.
+1. **Олардың ортақ негізгі компонентін табыңыз:** Екі компоненттің ортақ негізгі компоненті `FilterableProductTable` болып табылады.
+2. **Күй қайда тұратынын шешіңіз**: Фильтр мәтінін және чекбокс күй мәндерін `FilterableProductTable` ішінде сақтаймыз.
+ 
+Осылайша күй мәндері `FilterableProductTable` ішінде орналасады.
 
-So the state values will live in `FilterableProductTable`. 
-
-Add state to the component with the [`useState()` Hook.](/reference/react/useState) Hooks are special functions that let you "hook into" React. Add two state variables at the top of `FilterableProductTable` and specify their initial state:
+Компонент күйді [`useState()` Hook](/reference/react/useState) арқылы қосамыз. Хуктар - бұл React-ке қосылуға мүмкіндік беретін арнайы "ілмек" функциялар. `FilterableProductTable` жоғарғы жағына екі күй айнымалы мәнін қосыңыз және олардың бастапқы күйін көрсетіңіз:
 
 ```js
 function FilterableProductTable({ products }) {
@@ -284,7 +284,7 @@ function FilterableProductTable({ products }) {
   const [inStockOnly, setInStockOnly] = useState(false);  
 ```
 
-Then, pass `filterText` and `inStockOnly` to `ProductTable` and `SearchBar` as props:
+`ProductTable` және `SearchBar` компоненттеріне `filterText` және `inStockOnly` пропстарын жіберініз:
 
 ```js
 <div>
@@ -297,8 +297,7 @@ Then, pass `filterText` and `inStockOnly` to `ProductTable` and `SearchBar` as p
     inStockOnly={inStockOnly} />
 </div>
 ```
-
-You can start seeing how your application will behave. Edit the `filterText` initial value from `useState('')` to `useState('fruit')` in the sandbox code below. You'll see both the search input text and the table update:
+Қосымшаныз қалай әрекет ететінін көре бастай аласыз. Төмендегі құмжәшіг кодындағы `filterText` бастапқы мәнін `useState('')` мәнінен `useState('fruit')` мәніне өзгертіңіз. Іздеу жүйесінің мәтінін де, кестенің де өзгергенін көресіз:
 
 <Sandpack>
 
@@ -440,7 +439,7 @@ td {
 
 </Sandpack>
 
-Notice that editing the form doesn't work yet. There is a console error in the sandbox above explaining why:
+Форманы өңдеу әлі жұмыс істемейтінін ескеріңіз. Жоғарыдағы құмжәшігте консоль қатесі көрсетілген:
 
 <ConsoleBlock level="error">
 
@@ -448,7 +447,7 @@ You provided a \`value\` prop to a form field without an \`onChange\` handler. T
 
 </ConsoleBlock>
 
-In the sandbox above, `ProductTable` and `SearchBar` read the `filterText` and `inStockOnly` props to render the table, the input, and the checkbox. For example, here is how `SearchBar` populates the input value:
+Жоғарыдағы құмжәшігте `ProductTable` және `SearchBar`, енгізуді және чекбокс көрсету үшін "filterText" және "inStockOnly" пропсын оқиды. Мысалы, `SearchBar` енгізу мәнін қалай толтырады:
 
 ```js {1,6}
 function SearchBar({ filterText, inStockOnly }) {
@@ -459,8 +458,7 @@ function SearchBar({ filterText, inStockOnly }) {
         value={filterText} 
         placeholder="Search..."/>
 ```
-
-However, you haven't added any code to respond to the user actions like typing yet. This will be your final step.
+Дегенмен, теру сияқты пайдаланушы әрекеттеріне жауап беретін кодты әлі қосқан жоқсыз. Бұл сіздің соңғы қадамыңыз болады.
 
 
 ## Step 5: Add inverse data flow {/*step-5-add-inverse-data-flow*/}
