@@ -461,13 +461,13 @@ function SearchBar({ filterText, inStockOnly }) {
 Дегенмен, теру сияқты пайдаланушы әрекеттеріне жауап беретін кодты әлі қосқан жоқсыз. Бұл сіздің соңғы қадамыңыз болады.
 
 
-## Step 5: Add inverse data flow {/*step-5-add-inverse-data-flow*/}
+## 5-қадам: Кері деректер ағынын қосыңыз {/*step-5-add-inverse-data-flow*/}
 
-Currently your app renders correctly with props and state flowing down the hierarchy. But to change the state according to user input, you will need to support data flowing the other way: the form components deep in the hierarchy need to update the state in `FilterableProductTable`. 
+Қазіргі уақытта компонентініз иерархияға төменге бағдарланған пропстармен мен күй негізінде рендірленеді. Дегенмен, пайдаланушы енгізуі негізінде күйдің өзгеруі үшін кері бағытта деректер ағынын қамтамасыз ету керек: иерархияның ең төменгі форма компоненттер `FilterableProductTable`-ге күйін жіберу керек.
 
-React makes this data flow explicit, but it requires a little more typing than two-way data binding. If you try to type or check the box in the example above, you'll see that React ignores your input. This is intentional. By writing `<input value={filterText} />`, you've set the `value` prop of the `input` to always be equal to the `filterText` state passed in from `FilterableProductTable`. Since `filterText` state is never set, the input never changes.
+React-те деректер ағыны бір бағытты. Осыған байланысты деректерді екі жақты байланыстыруға қарағанда сәл көбірек код қажет. Іздеу өрісіне мәтін енгізсеніз немесе чекбоксты бассаныз, React елемейтінін көресіз. Осылай болуы қажет. `<input value={filterText} />` қойған кезде, сіз инпутті `мән` пропасын әрқашан `FilterableProductTable` ішінен жіберілген `filterText` күйіне тең етіп орнаттыңыз. `filterText` күйі орнатылмағандықтан, инпут ешқашан өзгермейді.
 
-You want to make it so whenever the user changes the form inputs, the state updates to reflect those changes. The state is owned by `FilterableProductTable`, so only it can call `setFilterText` and `setInStockOnly`. To let `SearchBar` update the `FilterableProductTable`'s state, you need to pass these functions down to `SearchBar`:
+Іздеу формасы өзгерген кезде енгізу күйінің өзгеруін қалаймыз. Күй `FilterableProductTable` иелігінде, сондықтан ол тек `setFilterText` және `setInStockOnly` шақыра алады. `SearchBar` `FilterableProductTable` күйін жаңарту үшін осы функцияларды `SearchBar` ішіне жіберу керек:
 
 ```js {2,3,10,11}
 function FilterableProductTable({ products }) {
@@ -482,8 +482,7 @@ function FilterableProductTable({ products }) {
         onFilterTextChange={setFilterText}
         onInStockOnlyChange={setInStockOnly} />
 ```
-
-Inside the `SearchBar`, you will add the `onChange` event handlers and set the parent state from them:
+`SearchBar` сіз `onChange` оқиға өңдегіштерін қосасыз және олардан негізгі күйді орнатасыз:
 
 ```js {5}
 <input 
@@ -493,7 +492,7 @@ Inside the `SearchBar`, you will add the `onChange` event handlers and set the p
   onChange={(e) => onFilterTextChange(e.target.value)} />
 ```
 
-Now the application fully works!
+Енді қосымша толығымен жұмыс істейді!
 
 <Sandpack>
 
@@ -643,8 +642,8 @@ td {
 
 </Sandpack>
 
-You can learn all about handling events and updating state in the [Adding Interactivity](/learn/adding-interactivity) section.
+Оқиғаларды өңдеу және күйді жаңарту туралы барлық ақпаратты [Интерактивтілікті қосу](/learn/adding-interactivity) бөлімінде біле аласыз.
 
-## Where to go from here {/*where-to-go-from-here*/}
+## Ары қарай уйрену {/*where-to-go-from-here*/}
 
-This was a very brief introduction to how to think about building components and applications with React. You can [start a React project](/learn/installation) right now or [dive deeper on all the syntax](/learn/describing-the-ui) used in this tutorial.
+Бұл React көмегімен компонент пен қосымшаларды құру туралы қысқаша кіріспе болды. Сіз дәл қазір React арқылы жоба [бастай аласыз](/learn/installation) немесе осы оқулықта пайдаланылған [барлық синтаксисті тереңірек үйренуге](/learn/describing-the-ui) болады.
