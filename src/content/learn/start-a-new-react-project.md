@@ -1,36 +1,38 @@
 ---
-title: Start a New React Project
+title: Жаңа React жобасын бастаңыз
 ---
 
 <Intro>
 
-If you want to build a new app or a new website fully with React, we recommend picking one of the React-powered frameworks popular in the community. Frameworks provide features that most apps and sites eventually need, including routing, data fetching, and generating HTML.
+Егер сіз React көмегімен жаңа қосымшаны немесе жаңа веб-сайтты жасағыңыз келсе, қоғамда танымал React қолдайтын фреймворктардың бірін таңдауды ұсынамыз. Фреймворктар көптеген қосымшамалар мен сайттарға қажет болатын мүмкіндіктерді қамтамасыз етеді, соның ішінде маршруттау, деректерді алу және HTML генирациялау.
 
 </Intro>
 
 <Note>
 
-**You need to install [Node.js](https://nodejs.org/en/) for local development.** You can *also* choose to use Node.js in production, but you don't have to. Many React frameworks support export to a static HTML/CSS/JS folder.
+**Сізге [Node.js](https://nodejs.org/ru/) локальді орнатуыныз кажет.** Сондай-ақ продакшнда Node.js таңдай аласыз, бірақ талап етілмейді. Көптеген React фреймворктері кодыңызды статикалық HTML/CSS/JS файлдарына экспорттайды.
 
 </Note>
 
-## Production-grade React frameworks {/*production-grade-react-frameworks*/}
+## Продакшн деңгейдегі React фреймворктері {/*production-grade-react-frameworks*/}
 
 ### Next.js {/*nextjs*/}
 
-**[Next.js](https://nextjs.org/) is a full-stack React framework.** It's versatile and lets you create React apps of any size--from a mostly static blog to a complex dynamic application. To create a new Next.js project, run in your terminal:
+**[Next.js](https://nextjs.org/) – фул-стектік React фреймворкі.** Ол жан-жақты және кез келген өлшемдегі React қосымшаларын жасауға мүмкіндік береді – статикалық блогтан бастап күрделі динамикалық қосымшаға дейін. Жаңа Next.js жобасын жасау үшін терминалда келесі команданы шақыныныз:
 
 <TerminalBlock>
 npx create-next-app@latest
 </TerminalBlock>
 
-If you're new to Next.js, check out the [Next.js tutorial.](https://nextjs.org/learn/foundations/about-nextjs)
+Next.js жаңадан бастасаңыз, [Next.js оқулығын қараңыз.](https://nextjs.org/learn/foundations/about-nextjs)
 
-Next.js is maintained by [Vercel](https://vercel.com/). You can [deploy a Next.js app](https://nextjs.org/docs/app/building-your-application/deploying) to any Node.js or serverless hosting, or to your own server. Next.js also supports a [static export](https://nextjs.org/docs/pages/building-your-application/deploying/static-exports) which doesn't require a server.
+[Vercel](https://vercel.com/) командасы Next.js үнемі жетілдіріп отырады. [Next.js қосымшасын](https://nextjs.org/docs/app/building-your-application/deploying) кез келген Node.js немесе серверсіз хостингке орналастыруға болады. Next.js сонымен қатар серверді қажет етпейтін [статикалық экспорт](https://nextjs.org/docs/pages/building-your-application/deploying/static-exports) бола алады.
 
 ### Remix {/*remix*/}
 
-**[Remix](https://remix.run/) is a full-stack React framework with nested routing.** It lets you break your app into nested parts that can load data in parallel and refresh in response to the user actions. To create a new Remix project, run:
+Ол қосымшаны деректерді параллель жүктей алатын және пайдаланушы әрекеттеріне жауап ретінде жаңарта алатын кірістірілген бөліктерге бөлуге мүмкіндік береді.
+
+**[Remix](https://remix.run/) кірістірілген маршруттауы бар фул-стек құрылым.** It lets you break your app into nested parts that can load data in parallel and refresh in response to the user actions. To create a new Remix project, run:
 
 <TerminalBlock>
 npx create-remix
