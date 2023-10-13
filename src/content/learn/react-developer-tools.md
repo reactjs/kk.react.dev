@@ -4,30 +4,30 @@ title: React Developer Tools
 
 <Intro>
 
-Use React Developer Tools to inspect React [components](/learn/your-first-component), edit [props](/learn/passing-props-to-a-component) and [state](/learn/state-a-components-memory), and identify performance problems.
+React [компоненттерін](/learn/your-first-component) тексеру, [пропстар](/learn/passing-props-to-a-component) және [күй](/learn/state-a) өңдеу үшін React Developer Tools-ты пайдаланыңыз және өнімділік мәселелерін анықтаныз.
 
 </Intro>
 
 <YouWillLearn>
 
-* How to install React Developer Tools
+* React Developer Tools орнату жолы
 
 </YouWillLearn>
 
-## Browser extension {/*browser-extension*/}
+## Браузер кеңейтімдері {/*browser-extension*/}
 
-The easiest way to debug websites built with React is to install the React Developer Tools browser extension. It is available for several popular browsers:
+React көмегімен жасалған веб-сайттарды жөндеудің ең оңай жолы - React Developer Tools браузер кеңейтімін орнату. Ол бірнеше танымал браузерлер үшін қол жетімді:
 
-* [Install for **Chrome**](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
-* [Install for **Firefox**](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
-* [Install for **Edge**](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil)
+* [**Chrome** үшін орнату](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+* [**Firefox** үшін орнату](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
+* [**Edge** үшін орнату](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil)
 
-Now, if you visit a website **built with React,** you will see the _Components_ and _Profiler_ panels.
+Енді **React арқылы жасалған** веб-сайтқа кірсеңіз, _Components_ және _Profiler_ панельдерін көресіз.
 
 ![React Developer Tools extension](/images/docs/react-devtools-extension.png)
 
-### Safari and other browsers {/*safari-and-other-browsers*/}
-For other browsers (for example, Safari), install the [`react-devtools`](https://www.npmjs.com/package/react-devtools) npm package:
+### Safari және басқа браузерлер {/*safari-and-other-browsers*/}
+Басқа браузерлерге (мысалы Safari) орнату үшін npm [`react-devtools`](https://www.npmjs.com/package/react-devtools) пакеті арқылы: 
 ```bash
 # Yarn
 yarn global add react-devtools
@@ -35,27 +35,25 @@ yarn global add react-devtools
 # Npm
 npm install -g react-devtools
 ```
-
-Next open the developer tools from the terminal:
+Содан кейін терминалда келесі команданы шақырыныз:
 ```bash
 react-devtools
 ```
-
-Then connect your website by adding the following `<script>` tag to the beginning of your website's `<head>`:
+Веб-сайтыңыздың `<head>` бөлігіне `<script>` тегін қосыңыз:
 ```html {3}
 <html>
   <head>
     <script src="http://localhost:8097"></script>
 ```
 
-Reload your website in the browser now to view it in developer tools.
+Браузер құралдарында көру үшін веб-сайтыңызды қайта ашыныз.
 
 ![React Developer Tools standalone](/images/docs/react-devtools-standalone.png)
 
-## Mobile (React Native) {/*mobile-react-native*/}
-React Developer Tools can be used to inspect apps built with [React Native](https://reactnative.dev/) as well.
+## Мобильдік қосымша (React Native) {/*mobile-react-native*/}
+React Developer Tools [React Native](https://reactnative.dev/) көмегімен жасалған қосымшаларды зеттеу үшін қолдануға болады.
 
-The easiest way to use React Developer Tools is to install it globally:
+React Developer Tools пайдаланудың ең оңай жолы - оны жалпы деңгейде орнату:
 ```bash
 # Yarn
 yarn global add react-devtools
@@ -63,14 +61,12 @@ yarn global add react-devtools
 # Npm
 npm install -g react-devtools
 ```
-
-Next open the developer tools from the terminal.
+Содан кейін терминалда келесі команданы шақырыныз:
 ```bash
 react-devtools
 ```
+Ол іске қосылған кезде локальді React Native қосымшанызға қосылуы керек.
 
-It should connect to any local React Native app that's running.
+> Программа зерттеу құралдары бірнеше секундтан кейін қосылмаса, қолданбаны қайта жүктеп көріңіз.
 
-> Try reloading the app if developer tools doesn't connect after a few seconds.
-
-[Learn more about debugging React Native.](https://reactnative.dev/docs/debugging)
+[React Native дебаггингі туралы көбірек білу.](https://reactnative.dev/docs/debugging)
