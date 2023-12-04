@@ -51,7 +51,9 @@ function StatefulForm({}) {
 
 The form state is the value returned by the action when the form was last submitted. If the form has not yet been submitted, it is the initial state that you pass.
 
+
 If used with a Server Action, `useFormState` allows the server's response from submitting the form to be shown even before hydration has completed.
+
 
 [See more examples below.](#usage)
 
@@ -117,7 +119,9 @@ function action(currentState, formData) {
 
 #### Display form errors {/*display-form-errors*/}
 
+
 To display messages such as an error message or toast that's returned by a Server Action, wrap the action in a call to `useFormState`.
+
 
 <Sandpack>
 
@@ -190,7 +194,9 @@ form button {
 
 #### Display structured information after submitting a form {/*display-structured-information-after-submitting-a-form*/}
 
+
 The return value from a Server Action can be any serializable value. For example, it could be an object that includes a boolean indicating whether the action was successful, an error message, or updated information.
+
 
 <Sandpack>
 
