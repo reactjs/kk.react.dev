@@ -171,6 +171,7 @@ function UsernameForm() {
 
 Note that like most Hooks, `useFormState` can only be called in <CodeStep step={1}>[client code](/reference/react/use-client)</CodeStep>.
 
+
 ### Calling a Server Action outside of `<form>` {/*calling-a-server-action-outside-of-form*/}
 
 Server Actions are exposed server endpoints and can be called anywhere in client code.
