@@ -4,7 +4,6 @@ title: React Reference Overview
 
 <Intro>
 
-
 This section provides detailed reference documentation for working with React. For an introduction to React, please visit the [Learn](/learn) section.
 
 </Intro>
@@ -33,4 +32,3 @@ React-dom contains features that are only supported for web applications (which 
 ## Legacy APIs {/*legacy-apis*/}
 
 * [Legacy APIs](/reference/react/legacy) - Exported from the `react` package, but not recommended for use in newly written code.
-
