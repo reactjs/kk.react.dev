@@ -115,11 +115,13 @@ async function requestUsername(formData) {
   // ...
 }
 
-export default App() {
-  <form action={requestUsername}>
-    <input type="text" name="username" />
-    <button type="submit">Request</button>
-  </form>
+export default function App() {
+  return (
+    <form action={requestUsername}>
+      <input type="text" name="username" />
+      <button type="submit">Request</button>
+    </form>
+  );
 }
 ```
 
@@ -170,7 +172,6 @@ function UsernameForm() {
 ```
 
 Note that like most Hooks, `useFormState` can only be called in <CodeStep step={1}>[client code](/reference/react/use-client)</CodeStep>.
-
 
 ### Calling a Server Action outside of `<form>` {/*calling-a-server-action-outside-of-form*/}
 
