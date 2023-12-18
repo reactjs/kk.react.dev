@@ -85,7 +85,7 @@ React қосымшасымен UI жасаған кезде әдетте бір�
 
 <Sandpack>
 
-```jsx App.js
+```jsx src/App.js
 function ProductCategoryRow({ category }) {
   return (
     <tr>
@@ -301,7 +301,7 @@ function FilterableProductTable({ products }) {
 
 <Sandpack>
 
-```jsx App.js
+```jsx src/App.js
 import { useState } from 'react';
 
 function FilterableProductTable({ products }) {
@@ -496,7 +496,7 @@ function FilterableProductTable({ products }) {
 
 <Sandpack>
 
-```jsx App.js
+```jsx src/App.js
 import { useState } from 'react';
 
 function FilterableProductTable({ products }) {
