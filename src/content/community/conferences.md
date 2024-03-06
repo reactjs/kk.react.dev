@@ -15,6 +15,7 @@ March 22, 2024. In-person in Paris, France + Remote (hybrid)
 
 [Website](https://react.paris/) - [Twitter](https://twitter.com/BeJS_) - [LinkedIn](https://www.linkedin.com/events/7150816372074192900/comments/)
 
+
 ### React Miami 2024 {/*react-miami-2024*/}
 April 19 - 20, 2024. In-person in Miami, FL, USA
 
