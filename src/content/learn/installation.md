@@ -37,7 +37,11 @@ export default function App() {
 
 Дәл осы жерде код жазуға немесе жоғарғы оң жақ бұрыштағы «Fork» түймесін басу арқылы кодты жаңа табта ашуға болады.
 
+<<<<<<< HEAD
 Мұндай құмжәшіктер React құжаттамасының беттерінің көпшілігінде қолжетімді. React құжаттамасынан басқа, React-ті қолдайтын көптеген онлайн құмжәшіктері бар: мысалы, [CodeSandbox](https://codesandbox.io/s/new), [StackBlitz](https://stackblitz.com/fork/react), немесе [CodePen.](https://codepen.io/pen?&editors=0010&layout=left&prefill_data_id=3f4569d1-1b11-4bce-bd46-89090eed5ddb)
+=======
+Most pages in the React documentation contain sandboxes like this. Outside of the React documentation, there are many online sandboxes that support React: for example, [CodeSandbox](https://codesandbox.io/s/new), [StackBlitz](https://stackblitz.com/fork/react), or [CodePen.](https://codepen.io/pen?template=QWYVwWN)
+>>>>>>> 2a2e02f1d88f4d2828728ce352626e84ed8abda0
 
 ### Локальде React-тi қолданып көріңіз {/*try-react-locally*/}
 
