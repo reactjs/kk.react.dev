@@ -15,7 +15,6 @@ March 22, 2024. In-person in Paris, France + Remote (hybrid)
 
 [Website](https://react.paris/) - [Twitter](https://twitter.com/BeJS_) - [LinkedIn](https://www.linkedin.com/events/7150816372074192900/comments/)
 
-
 ### Epic Web Conf 2024 {/*epic-web-2024*/}
 April 10 - 11, 2024. In-person in Park City, UT, USA
 
@@ -93,6 +92,10 @@ September 19-21, 2024. Alicante, Spain.
 
 [Website](https://reactalicante.es/) - [Twitter](https://twitter.com/ReactAlicante) - [YouTube](https://www.youtube.com/channel/UCaSdUaITU1Cz6PvC97A7e0w)
 
+### RenderCon Kenya 2024 {/*rendercon-kenya-2024*/}
+October 04 - 05, 2024. Nairobi, Kenya
+
+[Website](https://rendercon.org/) - [Twitter](https://twitter.com/renderconke) - [LinkedIn](https://www.linkedin.com/company/renderconke/) - [YouTube](https://www.youtube.com/channel/UC0bCcG8gHUL4njDOpQGcMIA)
 
 ### React India 2024 {/*react-india-2024*/}
 October 17 - 19, 2024. In-person in Goa, India (hybrid event) + Oct 15 2024 - remote day
