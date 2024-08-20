@@ -10,19 +10,16 @@ Do you know of a local React.js conference? Add it here! (Please keep the list c
 
 ## Upcoming Conferences {/*upcoming-conferences*/}
 
-<<<<<<< HEAD
+
 ### React Paris 2024 {/*react-paris-2024*/}
 March 22, 2024. In-person in Paris, France + Remote (hybrid)
 
 [Website](https://react.paris/) - [Twitter](https://twitter.com/BeJS_) - [LinkedIn](https://www.linkedin.com/events/7150816372074192900/comments/)
 
-<<<<<<< HEAD
-=======
 ### Epic Web Conf 2024 {/*epic-web-2024*/}
 April 10 - 11, 2024. In-person in Park City, UT, USA
 
 [Website](https://www.epicweb.dev/conf) - [YouTube](https://www.youtube.com/@EpicWebDev)
->>>>>>> c3bc5affa0e7452e306c785af11798d16b4f6dd4
 
 ### React Miami 2024 {/*react-miami-2024*/}
 April 19 - 20, 2024. In-person in Miami, FL, USA
@@ -49,13 +46,13 @@ May 22 - 24, 2024. In-person in Kraków, Poland + remote
 
 [Website](https://appjs.co) - [Twitter](https://twitter.com/appjsconf)
 
+
 ### Frontend Nation 2024 {/*frontend-nation-2024*/}
 June 4 - 7, 2024. Online
 
 [Website](https://frontendnation.com/) - [Twitter](https://twitter.com/frontendnation)
 
-=======
->>>>>>> 56df8af577407c69889f24a4c7d9ddb54745a26b
+
 ### React Summit 2024 {/*react-summit-2024*/}
 June 14 & 18, 2024. In-person in Amsterdam, Netherlands + remote (hybrid event)
 
@@ -85,11 +82,6 @@ July 17-19, 2024. In-person in Portland, OR, USA
 July 25, 2024. In-person in Berlin, Germany + remote (hybrid event)
 
 [Website](https://thegeekconf.com) - [Twitter](https://twitter.com/thegeekconf)
-
-### React Rally 2024 🐙 {/*react-rally-2024*/}
-August 12-13, 2024. Park City, UT, USA
-
-[Website](https://reactrally.com) - [Twitter](https://twitter.com/ReactRally) - [YouTube](https://www.youtube.com/channel/UCXBhQ05nu3L1abBUGeQ0ahw)
 
 ### React Universe Conf 2024 {/*react-universe-conf-2024*/}
 September 5-6, 2024. Wrocław, Poland.
