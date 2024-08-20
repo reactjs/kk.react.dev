@@ -7,15 +7,9 @@ import {useRef, useEffect} from 'react';
 import cn from 'classnames';
 import {ExternalLink} from './ExternalLink';
 
-<<<<<<< HEAD
 const bannerText = 'Украинаны қолдаңыз 🇺🇦';
 const bannerLink = 'https://opensource.fb.com/support-ukraine';
-const bannerLinkText = 'Украинаға гуманитарлық көмек көрсетуге көмектесіңіз';
-=======
-const bannerText = 'Stream React Conf on May 15-16.';
-const bannerLink = 'https://conf.react.dev/';
-const bannerLinkText = 'Learn more.';
->>>>>>> 556063bdce0ed00f29824bc628f79dac0a4be9f4
+const bannerLinkText = 'Украинаға гуманитарлық көмек көрсетуге көмектесіңіз'
 
 export default function SocialBanner() {
   const ref = useRef<HTMLDivElement | null>(null);
