@@ -40,6 +40,8 @@ export default function App() {
 Мұндай құмжәшіктер React құжаттамасының беттерінің көпшілігінде қолжетімді. React құжаттамасынан басқа, React-ті қолдайтын көптеген онлайн құмжәшіктері бар: мысалы, [CodeSandbox](https://codesandbox.io/s/new), [StackBlitz](https://stackblitz.com/fork/react), немесе [CodePen.](https://codepen.io/pen?&editors=0010&layout=left&prefill_data_id=3f4569d1-1b11-4bce-bd46-89090eed5ddb)
 
 
+Most pages in the React documentation contain sandboxes like this. Outside of the React documentation, there are many online sandboxes that support React: for example, [CodeSandbox](https://codesandbox.io/s/new), [StackBlitz](https://stackblitz.com/fork/react), or [CodePen.](https://codepen.io/pen?template=QWYVwWN)
+
 ### Локальде React-тi қолданып көріңіз {/*try-react-locally*/}
 
 Локальде компьютерінізде React-пен жұмыс жасап көру үшін осы [HTML бетін жүктеп алыңыз](https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html). Оны редакторда және браузерде ашыңыз!
