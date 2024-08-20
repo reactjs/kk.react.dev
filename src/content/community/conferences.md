@@ -10,7 +10,6 @@ Do you know of a local React.js conference? Add it here! (Please keep the list c
 
 ## Upcoming Conferences {/*upcoming-conferences*/}
 
-
 ### React Paris 2024 {/*react-paris-2024*/}
 March 22, 2024. In-person in Paris, France + Remote (hybrid)
 
@@ -51,7 +50,6 @@ May 22 - 24, 2024. In-person in Kraków, Poland + remote
 June 4 - 7, 2024. Online
 
 [Website](https://frontendnation.com/) - [Twitter](https://twitter.com/frontendnation)
-
 
 ### React Summit 2024 {/*react-summit-2024*/}
 June 14 & 18, 2024. In-person in Amsterdam, Netherlands + remote (hybrid event)
