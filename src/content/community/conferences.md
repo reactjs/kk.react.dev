@@ -15,13 +15,10 @@ March 22, 2024. In-person in Paris, France + Remote (hybrid)
 
 [Website](https://react.paris/) - [Twitter](https://twitter.com/BeJS_) - [LinkedIn](https://www.linkedin.com/events/7150816372074192900/comments/)
 
-<<<<<<< HEAD
-=======
 ### Epic Web Conf 2024 {/*epic-web-2024*/}
 April 10 - 11, 2024. In-person in Park City, UT, USA
 
 [Website](https://www.epicweb.dev/conf) - [YouTube](https://www.youtube.com/@EpicWebDev)
->>>>>>> b7bf6c16fb3152626a71c115b3242df6eb93bc6e
 
 ### React Miami 2024 {/*react-miami-2024*/}
 April 19 - 20, 2024. In-person in Miami, FL, USA
