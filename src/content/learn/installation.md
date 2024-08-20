@@ -36,7 +36,6 @@ export default function App() {
 </Sandpack>
 
 Дәл осы жерде код жазуға немесе жоғарғы оң жақ бұрыштағы «Fork» түймесін басу арқылы кодты жаңа табта ашуға болады.
-
 Most pages in the React documentation contain sandboxes like this. Outside of the React documentation, there are many online sandboxes that support React: for example, [CodeSandbox](https://codesandbox.io/s/new), [StackBlitz](https://stackblitz.com/fork/react), or [CodePen.](https://codepen.io/pen?template=QWYVwWN)
 
 ### Локальде React-тi қолданып көріңіз {/*try-react-locally*/}
