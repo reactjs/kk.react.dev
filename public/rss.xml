@@ -4,9 +4,9 @@
         <description><![CDATA[This blog is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted here first.]]></description>
         <link>https://react.dev/</link>
         <generator>react.dev rss module</generator>
-        <lastBuildDate>Tue, 15 Oct 2024 17:49:58 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Oct 2024 19:03:53 GMT</lastBuildDate>
         <atom:link href="https://react.dev/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 15 Oct 2024 17:49:58 GMT</pubDate>
+        <pubDate>Tue, 15 Oct 2024 19:03:53 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[React Conf 2024 Recap]]></title>
