@@ -47,7 +47,6 @@ November 29, 2024. In-person in Casablanca, Morocco (hybrid event)
 
 ## Past Conferences {/*past-conferences*/}
 
-=======
 ### React Brussels 2024 {/*react-brussels-2024*/}
 October 18, 2024. In-person in Brussels, Belgium (hybrid event)
 
