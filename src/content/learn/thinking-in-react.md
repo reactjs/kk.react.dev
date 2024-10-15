@@ -268,6 +268,7 @@ React-те «модельдік» деректердің екі түрі бар:
 
 Енді олар үшін стратегиямызды қарастырайық:
 
+<<<<<<< HEAD
 1. **Күйлерді қолданатын компоненттерді анықтаңыз:**
     * `ProductTable` күйлерге негізделген өнімдер тізімін фильтрлеу (іздеу сұрауы және чекбокс ұяшығының мәні).
     * `SearchBar` сол күйді көрсету керек (іздеу мәтіні және чекбокс мәні).
@@ -275,6 +276,13 @@ React-те «модельдік» деректердің екі түрі бар:
 2. **Күй қайда тұратынын шешіңіз**: Фильтр мәтінін және чекбокс күй мәндерін `FilterableProductTable` ішінде сақтаймыз.
  
 Осылайша күй мәндері `FilterableProductTable` ішінде орналасады.
+=======
+1. **Identify components that use state:**
+    * `ProductTable` needs to filter the product list based on that state (search text and checkbox value). 
+    * `SearchBar` needs to display that state (search text and checkbox value).
+2. **Find their common parent:** The first parent component both components share is `FilterableProductTable`.
+3. **Decide where the state lives**: We'll keep the filter text and checked state values in `FilterableProductTable`.
+>>>>>>> 2b2d0f2309f49c82cf5bb88ea62fb2e44661c634
 
 Компонент күйді [`useState()` Hook](/reference/react/useState) арқылы қосамыз. Хуктар - бұл React-ке қосылуға мүмкіндік беретін арнайы "ілмек" функциялар. `FilterableProductTable` жоғарғы жағына екі күй айнымалы мәнін қосыңыз және олардың бастапқы күйін көрсетіңіз:
 
