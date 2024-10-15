@@ -35,6 +35,23 @@ October 18, 2024. In-person in Brussels, Belgium (hybrid event)
 
 [Website](https://www.react.brussels/) - [Twitter](https://x.com/BrusselsReact)
 
+### React Advanced London 2024 {/*react-advanced-london-2024*/}
+October 25 & 28, 2024. In-person in London, UK + online (hybrid event)
+
+[Website](https://reactadvanced.com/) - [Twitter](https://x.com/reactadvanced)
+
+### React Africa 2024 {/*react-africa-2024*/}
+November 29, 2024. In-person in Casablanca, Morocco (hybrid event)
+
+[Website](https://react-africa.com/) - [Twitter](https://x.com/BeJS_)
+
+## Past Conferences {/*past-conferences*/}
+
+### React Brussels 2024 {/*react-brussels-2024*/}
+October 18, 2024. In-person in Brussels, Belgium (hybrid event)
+
+[Website](https://www.react.brussels/) - [Twitter](https://x.com/BrusselsReact)
+
 ### reactjsday 2024 {/*reactjsday-2024*/}
 October 25, 2024. In-person in Verona, Italy + online (hybrid event)
 
