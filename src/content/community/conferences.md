@@ -10,81 +10,6 @@ Do you know of a local React.js conference? Add it here! (Please keep the list c
 
 ## Upcoming Conferences {/*upcoming-conferences*/}
 
-<<<<<<< HEAD
-### React Paris 2024 {/*react-paris-2024*/}
-March 22, 2024. In-person in Paris, France + Remote (hybrid)
-
-[Website](https://react.paris/) - [Twitter](https://twitter.com/BeJS_) - [LinkedIn](https://www.linkedin.com/events/7150816372074192900/comments/)
-
-### Epic Web Conf 2024 {/*epic-web-2024*/}
-April 10 - 11, 2024. In-person in Park City, UT, USA
-
-[Website](https://www.epicweb.dev/conf) - [YouTube](https://www.youtube.com/@EpicWebDev)
-
-### React Miami 2024 {/*react-miami-2024*/}
-April 19 - 20, 2024. In-person in Miami, FL, USA
-
-[Website](https://reactmiami.com/) - [Twitter](https://twitter.com/ReactMiamiConf)
-
-### React Connection 2024 {/*react-connection-2024*/}
-April 22, 2024. In-person in Paris, France 
-
-[Website](https://reactconnection.io/) - [Twitter](https://twitter.com/ReactConn)
-
-### React Native Connection 2024 {/*react-native-connection-2024*/}
-April 23, 2024. In-person in Paris, France 
-
-[Website](https://reactnativeconnection.io/) - [Twitter](https://twitter.com/ReactNativeConn)
-
-### React Conf 2024 {/*react-conf-2024*/}
-May 15 - 16, 2024. In-person in Henderson, NV, USA + remote
-
-[Website](https://conf.react.dev) - [Twitter](https://twitter.com/reactjs)
-
-### App.js Conf 2024 {/*appjs-conf-2024*/}
-May 22 - 24, 2024. In-person in Kraków, Poland + remote
-
-[Website](https://appjs.co) - [Twitter](https://twitter.com/appjsconf)
-
-
-### Frontend Nation 2024 {/*frontend-nation-2024*/}
-June 4 - 7, 2024. Online
-
-[Website](https://frontendnation.com/) - [Twitter](https://twitter.com/frontendnation)
-
-### React Summit 2024 {/*react-summit-2024*/}
-June 14 & 18, 2024. In-person in Amsterdam, Netherlands + remote (hybrid event)
-
-[Website](https://reactsummit.com/) - [Twitter](https://twitter.com/reactsummit) - [Videos](https://portal.gitnation.org/)
-
-### Render(ATL) 2024 🍑 {/*renderatl-2024-*/}
-June 12 - June 14, 2024. Atlanta, GA, USA
-
-[Website](https://renderatl.com) - [Discord](https://www.renderatl.com/discord) - [Twitter](https://twitter.com/renderATL) - [Instagram](https://www.instagram.com/renderatl/) - [Facebook](https://www.facebook.com/renderatl/) - [LinkedIn](https://www.linkedin.com/company/renderatl) - [Podcast](https://www.renderatl.com/culture-and-code#/)
-
-### React Norway 2024 {/*react-norway-2024*/}
-June 14, 2024. In-person at Farris Bad Hotel in Larvik, Norway and online (hybrid event).
-
-[Website](https://reactnorway.com/) - [Twitter](https://twitter.com/ReactNorway)
-
-
-### React Nexus 2024 {/*react-nexus-2024*/}
-July 04 & 05, 2024. Bangalore, India (In-person event)
-
-[Website](https://reactnexus.com/) - [Twitter](https://twitter.com/ReactNexus) - [Linkedin](https://www.linkedin.com/company/react-nexus) - [YouTube](https://www.youtube.com/reactify_in)
-
-### Chain React 2024 {/*chain-react-2024*/}
-July 17-19, 2024. In-person in Portland, OR, USA
-
-[Website](https://chainreactconf.com) - [Twitter](https://twitter.com/ChainReactConf)
-
-### The Geek Conf 2024 {/*the-geek-conf-2024*/}
-July 25, 2024. In-person in Berlin, Germany + remote (hybrid event)
-
-[Website](https://thegeekconf.com) - [Twitter](https://twitter.com/thegeekconf)
-
-=======
->>>>>>> 9aa2e3668da290f92f8997a25f28bd3f58b2a26d
 ### React Universe Conf 2024 {/*react-universe-conf-2024*/}
 September 5-6, 2024. Wrocław, Poland.
 
@@ -105,19 +30,25 @@ October 17 - 19, 2024. In-person in Goa, India (hybrid event) + Oct 15 2024 - re
 
 [Website](https://www.reactindia.io) - [Twitter](https://twitter.com/react_india) - [Facebook](https://www.facebook.com/ReactJSIndia) - [Youtube](https://www.youtube.com/channel/UCaFbHCBkPvVv1bWs_jwYt3w)
 
-<<<<<<< HEAD
-## Past Conferences {/*past-conferences*/}
-
-=======
 ### React Brussels 2024 {/*react-brussels-2024*/}
 October 18, 2024. In-person in Brussels, Belgium (hybrid event)
 
 [Website](https://www.react.brussels/) - [Twitter](https://x.com/BrusselsReact)
 
+### reactjsday 2024 {/*reactjsday-2024*/}
+October 25, 2024. In-person in Verona, Italy + online (hybrid event)
+
+[Website](https://2024.reactjsday.it/) - [Twitter](https://x.com/reactjsday) - [Facebook](https://www.facebook.com/GrUSP/) - [YouTube](https://www.youtube.com/c/grusp)
+
 ### React Advanced London 2024 {/*react-advanced-london-2024*/}
 October 25 & 28, 2024. In-person in London, UK + online (hybrid event)
 
 [Website](https://reactadvanced.com/) - [Twitter](https://x.com/reactadvanced)
+
+### React Native London Conf 2024 {/*react-native-london-2024*/}
+November 14 & 15, 2024. In-person in London, UK
+
+[Website](https://reactnativelondon.co.uk/) - [Twitter](https://x.com/RNLConf)
 
 ### React Summit US 2024 {/*react-summit-us-2024*/}
 November 19 & 22, 2024. In-person in New York, USA + online (hybrid event)
@@ -171,7 +102,6 @@ June 12 - June 14, 2024. Atlanta, GA, USA
 
 [Website](https://renderatl.com) - [Discord](https://www.renderatl.com/discord) - [Twitter](https://twitter.com/renderATL) - [Instagram](https://www.instagram.com/renderatl/) - [Facebook](https://www.facebook.com/renderatl/) - [LinkedIn](https://www.linkedin.com/company/renderatl) - [Podcast](https://www.renderatl.com/culture-and-code#/)
 
->>>>>>> 9aa2e3668da290f92f8997a25f28bd3f58b2a26d
 ### Frontend Nation 2024 {/*frontend-nation-2024*/}
 June 4 - 7, 2024. Online
 
@@ -205,7 +135,7 @@ April 10 - 11, 2024. In-person in Park City, UT, USA
 ### React Paris 2024 {/*react-paris-2024*/}
 March 22, 2024. In-person in Paris, France + Remote (hybrid)
 
-[Website](https://react.paris/) - [Twitter](https://twitter.com/BeJS_) - [LinkedIn](https://www.linkedin.com/events/7150816372074192900/comments/)
+[Website](https://react.paris/) - [Twitter](https://twitter.com/BeJS_) - [LinkedIn](https://www.linkedin.com/events/7150816372074192900/comments/) - [Videos](https://www.youtube.com/playlist?list=PL53Z0yyYnpWhUzgvr2Nys3kZBBLcY0TA7)
 
 ### React Day Berlin 2023 {/*react-day-berlin-2023*/}
 December 8 & 12, 2023. In-person in Berlin, Germany + remote first interactivity (hybrid event)
