@@ -25,6 +25,10 @@ June 13 - 17, 2025. In-person in Amsterdam, Netherlands + remote (hybrid event)
 
 [Website](https://reactsummit.com/) - [Twitter](https://x.com/reactsummit)
 
+### React Universe Conf 2025 {/*react-universe-conf-2025*/}
+
+[Website](https://reactday.berlin/) - [Twitter](https://x.com/reactdayberlin)
+
 ## Past Conferences {/*past-conferences*/}
 
 ### React Africa 2024 {/*react-africa-2024*/}
@@ -45,12 +49,13 @@ November 14 & 15, 2024. In-person in London, UK
 ### React Advanced London 2024 {/*react-advanced-london-2024*/}
 October 25 & 28, 2024. In-person in London, UK + online (hybrid event)
 
-[Website](https://reactadvanced.com/) - [Twitter](https://x.com/reactadvanced)
 
-### reactjsday 2024 {/*reactjsday-2024*/}
-October 25, 2024. In-person in Verona, Italy + online (hybrid event)
+[Website](https://reactsummit.us/) - [Twitter](https://twitter.com/reactsummit) - [Videos](https://portal.gitnation.org/)
 
-[Website](https://2024.reactjsday.it/) - [Twitter](https://x.com/reactjsday) - [Facebook](https://www.facebook.com/GrUSP/) - [YouTube](https://www.youtube.com/c/grusp)
+### React Native London Conf 2024 {/*react-native-london-2024*/}
+November 14 & 15, 2024. In-person in London, UK
+
+[Website](https://reactnativelondon.co.uk/) - [Twitter](https://x.com/RNLConf)
 
 ### React Brussels 2024 {/*react-brussels-2024*/}
 October 18, 2024. In-person in Brussels, Belgium (hybrid event)
@@ -74,9 +79,7 @@ September 19-21, 2024. Alicante, Spain.
 
 ### React Universe Conf 2024 {/*react-universe-conf-2024*/}
 September 5-6, 2024. Wrocław, Poland.
-
 [Website](https://www.reactuniverseconf.com/) - [Twitter](https://twitter.com/react_native_eu) - [LinkedIn](https://www.linkedin.com/events/reactuniverseconf7163919537074118657/)
-
 
 ### React Rally 2024 🐙 {/*react-rally-2024*/}
 August 12-13, 2024. Park City, UT, USA
