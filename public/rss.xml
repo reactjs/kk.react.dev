@@ -4,10 +4,26 @@
         <description><![CDATA[This blog is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted here first.]]></description>
         <link>https://react.dev/</link>
         <generator>react.dev rss module</generator>
-        <lastBuildDate>Tue, 15 Oct 2024 19:03:53 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Jul 2025 18:15:32 GMT</lastBuildDate>
         <atom:link href="https://react.dev/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 15 Oct 2024 19:03:53 GMT</pubDate>
+        <pubDate>Wed, 23 Jul 2025 18:15:32 GMT</pubDate>
         <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[React v19]]></title>
+            <description><![CDATA[React 19 is now available on npm! In this post, we'll give an overview of the new features in React 19, and how you can adopt them.]]></description>
+            <link>https://react.dev/blog/2024/12/05/react-19</link>
+            <guid isPermaLink="true">https://react.dev/blog/2024/12/05/react-19</guid>
+            <dc:creator><![CDATA[The React Team]]></dc:creator>
+            <pubDate>Wed, 04 Dec 2024 19:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React Compiler Beta Release]]></title>
+            <description><![CDATA[At React Conf 2024, we announced the experimental release of React Compiler, a build-time tool that optimizes your React app through automatic memoization. In this post, we want to share what's next for open source, and our progress on the compiler.]]></description>
+            <link>https://react.dev/blog/2024/10/21/react-compiler-beta-release</link>
+            <guid isPermaLink="true">https://react.dev/blog/2024/10/21/react-compiler-beta-release</guid>
+            <dc:creator><![CDATA[Lauren Tan]]></dc:creator>
+            <pubDate>Sun, 20 Oct 2024 19:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[React Conf 2024 Recap]]></title>
             <description><![CDATA[Last week we hosted React Conf 2024, a two-day conference in Henderson, Nevada where 700+ attendees gathered in-person to discuss the latest in UI engineering. In this post, we'll summarize the talks and announcements from the event.]]></description>
@@ -17,15 +33,7 @@
             <pubDate>Tue, 21 May 2024 19:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[React 19 RC]]></title>
-            <description><![CDATA[React 19 RC is now available on npm! In this post, we'll give an overview of the new features in React 19, and how you can adopt them.]]></description>
-            <link>https://react.dev/blog/2024/04/25/react-19</link>
-            <guid isPermaLink="true">https://react.dev/blog/2024/04/25/react-19</guid>
-            <dc:creator><![CDATA[The React Team]]></dc:creator>
-            <pubDate>Wed, 24 Apr 2024 19:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[React 19 RC Upgrade Guide]]></title>
+            <title><![CDATA[React 19 Upgrade Guide]]></title>
             <description><![CDATA[The improvements added to React 19 require some breaking changes, but we've worked to make the upgrade as smooth as possible and we don't expect the changes to impact most apps. In this post, we will guide you through the steps for upgrading apps and libraries to React 19.]]></description>
             <link>https://react.dev/blog/2024/04/25/react-19-upgrade-guide</link>
             <guid isPermaLink="true">https://react.dev/blog/2024/04/25/react-19-upgrade-guide</guid>
