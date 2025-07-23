@@ -47,23 +47,11 @@ If want to try using React in your existing app or a website, you can [add React
 
 <Note>
 
-## React қосымшасын нөлден құру {/*build-a-react-app-from-scratch*/}
-
-Егер фреймворк сіздің жобаңызға сәйкес келмесе, өз фреймворкіңізді құрғыныз келсе немесе React қосымшасының негіздерін үйренгіңіз келсе, [React қосымшасын нөлден құра аласыз.](/learn/build-a-react-app-from-scratch)
-
-## Бар жобаға React-тi қосыңыз {/*add-react-to-an-existing-project*/}
+#### Should I use Create React App? {/*should-i-use-create-react-app*/}
 
 No. Create React App has been deprecated. For more information, see [Sunsetting Create React App](/blog/2025/02/14/sunsetting-create-react-app).
 
-<Note>
-
-#### Create React App қолдану керек пе? {/*should-i-use-create-react-app*/}
-
-Жоқ. Create React App ескірген. Қосымша ақпарат үшін [Create React App-тің тоқтатылуы](/blog/2025/02/14/sunsetting-create-react-app) бөлімін қараңыз.
-
 </Note>
-
-## Келесі қадамдар {/*next-steps*/}
 
 ## Next steps {/*next-steps*/}
 

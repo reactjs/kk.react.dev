@@ -44,6 +44,10 @@ July 03 - 05, 2025. In-person in Bangalore, India
 
 [Website](https://reactday.berlin/) - [Twitter](https://x.com/reactdayberlin)
 
+### React Alicante 2025 {/*react-alicante-2025*/}
+October 2-4, 2025. Alicante, Spain.
+
+[Website](https://reactalicante.es/) - [Twitter](https://x.com/ReactAlicante) - [Bluesky](https://bsky.app/profile/reactalicante.es) - [YouTube](https://www.youtube.com/channel/UCaSdUaITU1Cz6PvC97A7e0w)
 ### React Conf 2025 {/*react-conf-2025*/}
 October 7-8, 2025. Henderson, Nevada, USA and free livestream
 
