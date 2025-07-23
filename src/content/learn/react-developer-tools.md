@@ -4,30 +4,30 @@ title: React Developer Tools
 
 <Intro>
 
-React [компоненттерін](/learn/your-first-component) тексеру, [пропстар](/learn/passing-props-to-a-component) және [күй](/learn/state-a) өңдеу үшін React Developer Tools-ты пайдаланыңыз және өнімділік мәселелерін анықтаныз.
+Use React Developer Tools to inspect React [components](/learn/your-first-component), edit [props](/learn/passing-props-to-a-component) and [state](/learn/state-a-components-memory), and identify performance problems.
 
 </Intro>
 
 <YouWillLearn>
 
-* React Developer Tools орнату жолы
+* How to install React Developer Tools
 
 </YouWillLearn>
 
-## Браузер кеңейтімдері {/*browser-extension*/}
+## Browser extension {/*browser-extension*/}
 
-React көмегімен жасалған веб-сайттарды жөндеудің ең оңай жолы - React Developer Tools браузер кеңейтімін орнату. Ол бірнеше танымал браузерлер үшін қол жетімді:
+The easiest way to debug websites built with React is to install the React Developer Tools browser extension. It is available for several popular browsers:
 
-* [**Chrome** үшін орнату](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
-* [**Firefox** үшін орнату](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
-* [**Edge** үшін орнату](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil)
+* [Install for **Chrome**](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+* [Install for **Firefox**](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
+* [Install for **Edge**](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil)
 
-Енді **React арқылы жасалған** веб-сайтқа кірсеңіз, _Components_ және _Profiler_ панельдерін көресіз.
+Now, if you visit a website **built with React,** you will see the _Components_ and _Profiler_ panels.
 
 ![React Developer Tools extension](/images/docs/react-devtools-extension.png)
 
-### Safari және басқа браузерлер {/*safari-and-other-browsers*/}
-Басқа браузерлерге (мысалы Safari) орнату үшін npm [`react-devtools`](https://www.npmjs.com/package/react-devtools) пакеті арқылы: 
+### Safari and other browsers {/*safari-and-other-browsers*/}
+For other browsers (for example, Safari), install the [`react-devtools`](https://www.npmjs.com/package/react-devtools) npm package:
 ```bash
 # Yarn
 yarn global add react-devtools
@@ -35,48 +35,27 @@ yarn global add react-devtools
 # Npm
 npm install -g react-devtools
 ```
-Содан кейін терминалда келесі команданы шақырыныз:
+
+Next open the developer tools from the terminal:
 ```bash
 react-devtools
 ```
-Веб-сайтыңыздың `<head>` бөлігіне `<script>` тегін қосыңыз:
+
+Then connect your website by adding the following `<script>` tag to the beginning of your website's `<head>`:
 ```html {3}
 <html>
   <head>
     <script src="http://localhost:8097"></script>
 ```
 
-Браузер құралдарында көру үшін веб-сайтыңызды қайта ашыныз.
+Reload your website in the browser now to view it in developer tools.
 
 ![React Developer Tools standalone](/images/docs/react-devtools-standalone.png)
 
-<<<<<<< HEAD
 ## Мобильдік қосымша (React Native) {/*mobile-react-native*/}
-React Developer Tools [React Native](https://reactnative.dev/) көмегімен жасалған қосымшаларды зеттеу үшін қолдануға болады.
 
-React Developer Tools пайдаланудың ең оңай жолы - оны жалпы деңгейде орнату:
-```bash
-# Yarn
-yarn global add react-devtools
-
-# Npm
-npm install -g react-devtools
-```
-Содан кейін терминалда келесі команданы шақырыныз:
-```bash
-react-devtools
-```
-Ол іске қосылған кезде локальді React Native қосымшанызға қосылуы керек.
-
-> Программа зерттеу құралдары бірнеше секундтан кейін қосылмаса, қолданбаны қайта жүктеп көріңіз.
+[React Native](https://reactnative.dev/) көмегімен жасалған қосымшаларды тексеру үшін [React Native DevTools](https://reactnative.dev/docs/react-native-devtools) қолдана аласыз - бұл React Developer Tools-ты тереңінен біріктіретін кіріктірілген дебаггер. Барлық функциялар браузер кеңейтімімен бірдей жұмыс істейді, соның ішінде натив элементтерді бөлектеу және таңдау.
 
 [React Native дебаггингі туралы көбірек білу.](https://reactnative.dev/docs/debugging)
-=======
-## Mobile (React Native) {/*mobile-react-native*/}
 
-To inspect apps built with [React Native](https://reactnative.dev/), you can use [React Native DevTools](https://reactnative.dev/docs/react-native-devtools), the built-in debugger that deeply integrates React Developer Tools. All features work identically to the browser extension, including native element highlighting and selection.
-
-[Learn more about debugging in React Native.](https://reactnative.dev/docs/debugging)
-
-> For versions of React Native earlier than 0.76, please use the standalone build of React DevTools by following the [Safari and other browsers](#safari-and-other-browsers) guide above.
->>>>>>> 3b02f828ff2a4f9d2846f077e442b8a405e2eb04
+> React Native 0.76-дан бұрынғы нұсқалары үшін жоғарыдағы [Safari және басқа браузерлер](#safari-and-other-browsers) нұсқаулығын ұстан отырып React DevTools-тың автономды нұсқасын қолданыңыз.

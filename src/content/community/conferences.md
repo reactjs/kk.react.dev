@@ -48,7 +48,6 @@ July 03 - 05, 2025. In-person in Bangalore, India
 October 2-4, 2025. Alicante, Spain.
 
 [Website](https://reactalicante.es/) - [Twitter](https://x.com/ReactAlicante) - [Bluesky](https://bsky.app/profile/reactalicante.es) - [YouTube](https://www.youtube.com/channel/UCaSdUaITU1Cz6PvC97A7e0w)
-
 ### React Conf 2025 {/*react-conf-2025*/}
 October 7-8, 2025. Henderson, Nevada, USA and free livestream
 
@@ -105,13 +104,7 @@ November 14 & 15, 2024. In-person in London, UK
 ### React Advanced London 2024 {/*react-advanced-london-2024*/}
 October 25 & 28, 2024. In-person in London, UK + online (hybrid event)
 
-
-[Website](https://reactsummit.us/) - [Twitter](https://twitter.com/reactsummit) - [Videos](https://portal.gitnation.org/)
-
-### React Native London Conf 2024 {/*react-native-london-2024*/}
-November 14 & 15, 2024. In-person in London, UK
-
-[Website](https://reactnativelondon.co.uk/) - [Twitter](https://x.com/RNLConf)
+[Website](https://reactadvanced.com/) - [Twitter](https://twitter.com/reactadvanced) - [Videos](https://portal.gitnation.org/)
 
 ### React Brussels 2024 {/*react-brussels-2024*/}
 October 18, 2024. In-person in Brussels, Belgium (hybrid event)
