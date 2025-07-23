@@ -50,33 +50,10 @@ react-devtools
 
 ![React Developer Tools standalone](/images/docs/react-devtools-standalone.png)
 
-<<<<<<< HEAD
 ## Мобильдік қосымша (React Native) {/*mobile-react-native*/}
-React Developer Tools [React Native](https://reactnative.dev/) көмегімен жасалған қосымшаларды зеттеу үшін қолдануға болады.
 
-React Developer Tools пайдаланудың ең оңай жолы - оны жалпы деңгейде орнату:
-```bash
-# Yarn
-yarn global add react-devtools
-
-# Npm
-npm install -g react-devtools
-```
-Содан кейін терминалда келесі команданы шақырыныз:
-```bash
-react-devtools
-```
-Ол іске қосылған кезде локальді React Native қосымшанызға қосылуы керек.
-
-> Программа зерттеу құралдары бірнеше секундтан кейін қосылмаса, қолданбаны қайта жүктеп көріңіз.
+[React Native](https://reactnative.dev/) көмегімен жасалған қосымшаларды тексеру үшін [React Native DevTools](https://reactnative.dev/docs/react-native-devtools) қолдана аласыз - бұл React Developer Tools-ты тереңінен біріктіретін кіріктірілген дебаггер. Барлық функциялар браузер кеңейтімімен бірдей жұмыс істейді, соның ішінде натив элементтерді бөлектеу және таңдау.
 
 [React Native дебаггингі туралы көбірек білу.](https://reactnative.dev/docs/debugging)
-=======
-## Mobile (React Native) {/*mobile-react-native*/}
 
-To inspect apps built with [React Native](https://reactnative.dev/), you can use [React Native DevTools](https://reactnative.dev/docs/react-native-devtools), the built-in debugger that deeply integrates React Developer Tools. All features work identically to the browser extension, including native element highlighting and selection.
-
-[Learn more about debugging in React Native.](https://reactnative.dev/docs/debugging)
-
-> For versions of React Native earlier than 0.76, please use the standalone build of React DevTools by following the [Safari and other browsers](#safari-and-other-browsers) guide above.
->>>>>>> 3b02f828ff2a4f9d2846f077e442b8a405e2eb04
+> React Native 0.76-дан бұрынғы нұсқалары үшін жоғарыдағы [Safari және басқа браузерлер](#safari-and-other-browsers) нұсқаулығын ұстан отырып React DevTools-тың автономды нұсқасын қолданыңыз.
