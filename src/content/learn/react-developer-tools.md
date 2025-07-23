@@ -52,10 +52,10 @@ Reload your website in the browser now to view it in developer tools.
 
 ![React Developer Tools standalone](/images/docs/react-devtools-standalone.png)
 
-## Mobile (React Native) {/*mobile-react-native*/}
+## Мобильдік қосымша (React Native) {/*mobile-react-native*/}
 
-To inspect apps built with [React Native](https://reactnative.dev/), you can use [React Native DevTools](https://reactnative.dev/docs/react-native-devtools), the built-in debugger that deeply integrates React Developer Tools. All features work identically to the browser extension, including native element highlighting and selection.
+[React Native](https://reactnative.dev/) көмегімен жасалған қосымшаларды тексеру үшін [React Native DevTools](https://reactnative.dev/docs/react-native-devtools) қолдана аласыз - бұл React Developer Tools-ты тереңінен біріктіретін кіріктірілген дебаггер. Барлық функциялар браузер кеңейтімімен бірдей жұмыс істейді, соның ішінде натив элементтерді бөлектеу және таңдау.
 
-[Learn more about debugging in React Native.](https://reactnative.dev/docs/debugging)
+[React Native дебаггингі туралы көбірек білу.](https://reactnative.dev/docs/debugging)
 
-> For versions of React Native earlier than 0.76, please use the standalone build of React DevTools by following the [Safari and other browsers](#safari-and-other-browsers) guide above.
+> React Native 0.76-дан бұрынғы нұсқалары үшін жоғарыдағы [Safari және басқа браузерлер](#safari-and-other-browsers) нұсқаулығын ұстан отырып React DevTools-тың автономды нұсқасын қолданыңыз.
