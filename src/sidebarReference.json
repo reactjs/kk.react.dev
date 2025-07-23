@@ -104,6 +104,16 @@
         {
           "title": "<Suspense>",
           "path": "/reference/react/Suspense"
+        },
+        {
+          "title": "<Activity>",
+          "path": "/reference/react/Activity",
+          "version": "experimental"
+        },
+        {
+          "title": "<ViewTransition>",
+          "path": "/reference/react/ViewTransition",
+          "version": "experimental"
         }
       ]
     },
@@ -145,17 +155,17 @@
         {
           "title": "experimental_taintObjectReference",
           "path": "/reference/react/experimental_taintObjectReference",
-          "version": "canary"
+          "version": "experimental"
         },
         {
           "title": "experimental_taintUniqueValue",
           "path": "/reference/react/experimental_taintUniqueValue",
-          "version": "canary"
+          "version": "experimental"
         },
         {
-          "title": "captureOwnerStack",
-          "path": "/reference/react/captureOwnerStack",
-          "version": "canary"
+          "title": "unstable_addTransitionType",
+          "path": "/reference/react/addTransitionType",
+          "version": "experimental"
         }
       ]
     },
