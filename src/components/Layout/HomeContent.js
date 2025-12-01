@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 /*
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
@@ -244,12 +251,20 @@ export function HomeContent() {
               фулл-стекке өтіңіз
             </Header>
             <Para>
+<<<<<<< HEAD
               React - бұл бағдарламалық қосымша. Ол компоненттерді біріктіруге
               мүмкіндік береді, бірақ маршруттау мен деректерді алу жолын
               көрсетпейді. React көмегімен толық бағдарлама құру үшін{' '}
               <Link href="https://nextjs.org">Next.js</Link> немесе{' '}
               <Link href="https://remix.run">Remix</Link> сияқты фулл-стекті
               ұсынамыз
+=======
+              React is a library. It lets you put components together, but it
+              doesn’t prescribe how to do routing and data fetching. To build an
+              entire app with React, we recommend a full-stack React framework
+              like <Link href="https://nextjs.org">Next.js</Link> or{' '}
+              <Link href="https://reactrouter.com">React Router</Link>.
+>>>>>>> 2534424ec6c433cc2c811d5a0bd5a65b75efa5f0
             </Para>
           </Center>
           <FullBleed>
@@ -267,8 +282,13 @@ export function HomeContent() {
               <CTA
                 color="gray"
                 icon="framework"
+<<<<<<< HEAD
                 href="/learn/start-a-new-react-project">
                 Фреймворктен бастаңыз
+=======
+                href="/learn/creating-a-react-app">
+                Get started with a framework
+>>>>>>> 2534424ec6c433cc2c811d5a0bd5a65b75efa5f0
               </CTA>
             </div>
           </Center>
