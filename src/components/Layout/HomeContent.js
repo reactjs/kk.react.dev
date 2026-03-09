@@ -251,20 +251,12 @@ export function HomeContent() {
               фулл-стекке өтіңіз
             </Header>
             <Para>
-<<<<<<< HEAD
               React - бұл бағдарламалық қосымша. Ол компоненттерді біріктіруге
               мүмкіндік береді, бірақ маршруттау мен деректерді алу жолын
-              көрсетпейді. React көмегімен толық бағдарлама құру үшін{' '}
-              <Link href="https://nextjs.org">Next.js</Link> немесе{' '}
-              <Link href="https://remix.run">Remix</Link> сияқты фулл-стекті
+              көрсетпейді. React көмегімен толық бағдарлама құру үшін{‘ ‘}
+              <Link href="https://nextjs.org">Next.js</Link> немесе{‘ ‘}
+              <Link href="https://reactrouter.com">React Router</Link> сияқты фулл-стекті
               ұсынамыз
-=======
-              React is a library. It lets you put components together, but it
-              doesn’t prescribe how to do routing and data fetching. To build an
-              entire app with React, we recommend a full-stack React framework
-              like <Link href="https://nextjs.org">Next.js</Link> or{' '}
-              <Link href="https://reactrouter.com">React Router</Link>.
->>>>>>> 7c90c6eb4bb93a5eacb9cb4ad4ca496c32984636
             </Para>
           </Center>
           <FullBleed>
@@ -282,13 +274,8 @@ export function HomeContent() {
               <CTA
                 color="gray"
                 icon="framework"
-<<<<<<< HEAD
                 href="/learn/start-a-new-react-project">
                 Фреймворктен бастаңыз
-=======
-                href="/learn/creating-a-react-app">
-                Get started with a framework
->>>>>>> 7c90c6eb4bb93a5eacb9cb4ad4ca496c32984636
               </CTA>
             </div>
           </Center>
