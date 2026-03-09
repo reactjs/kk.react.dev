@@ -38,8 +38,8 @@
 <<<<<<< HEAD
     "next": "15.4.8",
 =======
-    "next": "15.1.11",
->>>>>>> a1ddcf51a08cc161182b90a24b409ba11289f73e
+    "next": "15.1.9",
+>>>>>>> e22544e68d6fffda33332771efe27034739f35a4
     "next-remote-watch": "^1.0.0",
     "parse-numeric-range": "^1.2.0",
     "react": "^19.0.0",
