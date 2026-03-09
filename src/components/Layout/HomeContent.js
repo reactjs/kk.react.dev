@@ -253,10 +253,10 @@ export function HomeContent() {
             <Para>
               React - бұл бағдарламалық қосымша. Ол компоненттерді біріктіруге
               мүмкіндік береді, бірақ маршруттау мен деректерді алу жолын
-              көрсетпейді. React көмегімен толық бағдарлама құру үшін{‘ ‘}
-              <Link href="https://nextjs.org">Next.js</Link> немесе{‘ ‘}
-              <Link href="https://reactrouter.com">React Router</Link> сияқты фулл-стекті
-              ұсынамыз
+              көрсетпейді. React көмегімен толық бағдарлама құру үшін{' '}
+              <Link href="https://nextjs.org">Next.js</Link> немесе{' '}
+              <Link href="https://reactrouter.com">React Router</Link> сияқты
+              фулл-стекті ұсынамыз
             </Para>
           </Center>
           <FullBleed>
