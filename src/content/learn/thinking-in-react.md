@@ -37,15 +37,9 @@ React қосымшасымен UI жасаған кезде әдетте бір�
 
 Сіз өзіңіздің тәжірибеңізге байланысты дизайнды компонентерге бөлyге болытын жолдар:
 
-<<<<<<< HEAD
-* **Программалау**--қарапайым функцияны немесе объект жасау туралы шешім қабылдаған кездегі тәсілді қолданыңыз. Техниканың бірі [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), бір компонент бір тапсырманы орындауы тиіс. Егер функционал уақыт өте келе ұлғайса, оны кішірек ішкі құрамдастарға бөлу керек.
+* **Программалау**--қарапайым функцияны немесе объект жасау туралы шешім қабылдаған кездегі тәсілді қолданыңыз. Техниканың бірі [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), бір компонент бір тапсырманы орындауы тиіс. Егер функционал уақыт өте келе ұлғайса, оны кішірек ішкі құрамдастарға бөлу керек.
 * **CSS**--ойлаңыз, неліктен класс селектірін жасайтындығыңызды. (Дегенмен компоненттер соншалықты кішірейтілмегенін есте сақтаңыз.)
 * **Дизайн**--дизайн қабаттарын қалай ұйымдастыратыныңызды ойлаңыз.
-=======
-* **Programming**--use the same techniques for deciding if you should create a new function or object. One such technique is the [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), that is, a component should ideally only be concerned with one thing. If it ends up growing, it should be decomposed into smaller subcomponents. 
-* **CSS**--consider what you would make class selectors for. (However, components are a bit less granular.)
-* **Design**--consider how you would organize the design's layers.
->>>>>>> f8c81a0f4f8e454c850f0c854ad054b32313345c
 
 Егер сіздің JSON жақсы құрылымдалған болса, cіз оның UI компонент құрылымына табиғи түрде сәйкес келетінін жиі байқайсыз. Себебі UI және деректер үлгілері жиі бірдей ақпараттық архитектураға, яғни бірдей пішінге ие болады. Пайдаланушы интерфейсін компонентерге бөліңіз, олардың әрқайсысы деректер үлгісінің бір бөлігін көрсетеді.
 
