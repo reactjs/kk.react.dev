@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 /*
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
@@ -246,9 +253,9 @@ export function HomeContent() {
             <Para>
               React - бұл бағдарламалық қосымша. Ол компоненттерді біріктіруге
               мүмкіндік береді, бірақ маршруттау мен деректерді алу жолын
-              көрсетпейді. React көмегімен толық бағдарлама құру үшін{' '}
-              <Link href="https://nextjs.org">Next.js</Link> немесе{' '}
-              <Link href="https://remix.run">Remix</Link> сияқты фулл-стекті
+              көрсетпейді. React көмегімен толық бағдарлама құру үшін{‘ ‘}
+              <Link href="https://nextjs.org">Next.js</Link> немесе{‘ ‘}
+              <Link href="https://reactrouter.com">React Router</Link> сияқты фулл-стекті
               ұсынамыз
             </Para>
           </Center>
