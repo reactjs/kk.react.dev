@@ -10,16 +10,10 @@ Do you know of a local React.js conference? Add it here! (Please keep the list c
 
 ## Upcoming Conferences {/*upcoming-conferences*/}
 
-<<<<<<< HEAD
-### React Universe Conf 2025 {/*react-universe-conf-2025*/}
-
-[Website](https://reactday.berlin/) - [Twitter](https://x.com/reactdayberlin)
-=======
 ### React Paris 2026 {/*react-paris-2026*/}
 March 26 - 27, 2026. In-person in Paris, France (hybrid event)
 
 [Website](https://react.paris/) - [Twitter](https://x.com/BeJS_)
->>>>>>> 7c90c6eb4bb93a5eacb9cb4ad4ca496c32984636
 
 ### CityJS London 2026 {/*cityjs-london-2026*/}
 April 14-17,  2026. In-person in London
