@@ -37,9 +37,15 @@ React қосымшасымен UI жасаған кезде әдетте бір�
 
 Сіз өзіңіздің тәжірибеңізге байланысты дизайнды компонентерге бөлyге болытын жолдар:
 
+<<<<<<< HEAD
 * **Программалау**--қарапайым функцияны немесе объект жасау туралы шешім қабылдаған кездегі тәсілді қолданыңыз. Техниканың бірі [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), бір компонент бір тапсырманы орындауы тиіс. Егер функционал уақыт өте келе ұлғайса, оны кішірек ішкі құрамдастарға бөлу керек.
 * **CSS**--ойлаңыз, неліктен класс селектірін жасайтындығыңызды. (Дегенмен компоненттер соншалықты кішірейтілмегенін есте сақтаңыз.)
 * **Дизайн**--дизайн қабаттарын қалай ұйымдастыратыныңызды ойлаңыз.
+=======
+* **Programming**--use the same techniques for deciding if you should create a new function or object. One such technique is the [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), that is, a component should ideally only be concerned with one thing. If it ends up growing, it should be decomposed into smaller subcomponents.
+* **CSS**--consider what you would make class selectors for. (However, components are a bit less granular.)
+* **Design**--consider how you would organize the design's layers.
+>>>>>>> 6ec61348646040795fdaa9de14a9bec603260f87
 
 Егер сіздің JSON жақсы құрылымдалған болса, cіз оның UI компонент құрылымына табиғи түрде сәйкес келетінін жиі байқайсыз. Себебі UI және деректер үлгілері жиі бірдей ақпараттық архитектураға, яғни бірдей пішінге ие болады. Пайдаланушы интерфейсін компонентерге бөліңіз, олардың әрқайсысы деректер үлгісінің бір бөлігін көрсетеді.
 
@@ -231,10 +237,17 @@ UI-ды интерактивті ету үшін пайдаланушыларғ�
 
 Оларды тағы да қарастырайық:
 
+<<<<<<< HEAD
 1. Өнімдердің бастапқы тізімі **пропс ретінде берілген, сондықтан ол күй емес.**
 2. Іздеу мәтіні күй болып көрінеді, өйткені ол уақыт өте өзгереді және ештеңеден есептелмейді.
 3. Чекбокстың мәні күй болып көрінеді, себебі ол уақыт өте өзгереді және ештеңеден есептелмейді.
 4. Өнімдердің фильтр тізімі **күй емес, өйткені оны есептеуге болады**, іздеу мен чекбокс мәнін пайдаланып тізімді реттейміз.
+=======
+1. The original list of products is **passed in as props, so it's not state.**
+2. The search text seems to be state since it changes over time and can't be computed from anything.
+3. The value of the checkbox seems to be state since it changes over time and can't be computed from anything.
+4. The filtered list of products **isn't state because it can be computed** by taking the original list of products and filtering it according to the search text and value of the checkbox.
+>>>>>>> 6ec61348646040795fdaa9de14a9bec603260f87
 
 Тек іздеу мен чекбокс мәні күй екенін анықтап алдық! Керемет!
 
@@ -269,27 +282,33 @@ React-те «модельдік» деректердің екі түрі бар:
 Енді олар үшін стратегиямызды қарастырайық:
 
 1. **Identify components that use state:**
-    * `ProductTable` needs to filter the product list based on that state (search text and checkbox value). 
+    * `ProductTable` needs to filter the product list based on that state (search text and checkbox value).
     * `SearchBar` needs to display that state (search text and checkbox value).
 2. **Find their common parent:** The first parent component both components share is `FilterableProductTable`.
 3. **Decide where the state lives**: We'll keep the filter text and checked state values in `FilterableProductTable`.
 
+<<<<<<< HEAD
 Компонент күйді [`useState()` Hook](/reference/react/useState) арқылы қосамыз. Хуктар - бұл React-ке қосылуға мүмкіндік беретін арнайы "ілмек" функциялар. `FilterableProductTable` жоғарғы жағына екі күй айнымалы мәнін қосыңыз және олардың бастапқы күйін көрсетіңіз:
+=======
+So the state values will live in `FilterableProductTable`.
+
+Add state to the component with the [`useState()` Hook.](/reference/react/useState) Hooks are special functions that let you "hook into" React. Add two state variables at the top of `FilterableProductTable` and specify their initial state:
+>>>>>>> 6ec61348646040795fdaa9de14a9bec603260f87
 
 ```js
 function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
-  const [inStockOnly, setInStockOnly] = useState(false);  
+  const [inStockOnly, setInStockOnly] = useState(false);
 ```
 
 `ProductTable` және `SearchBar` компоненттеріне `filterText` және `inStockOnly` пропстарын жіберініз:
 
 ```js
 <div>
-  <SearchBar 
-    filterText={filterText} 
+  <SearchBar
+    filterText={filterText}
     inStockOnly={inStockOnly} />
-  <ProductTable 
+  <ProductTable
     products={products}
     filterText={filterText}
     inStockOnly={inStockOnly} />
@@ -308,10 +327,10 @@ function FilterableProductTable({ products }) {
 
   return (
     <div>
-      <SearchBar 
-        filterText={filterText} 
+      <SearchBar
+        filterText={filterText}
         inStockOnly={inStockOnly} />
-      <ProductTable 
+      <ProductTable
         products={products}
         filterText={filterText}
         inStockOnly={inStockOnly} />
@@ -389,13 +408,13 @@ function ProductTable({ products, filterText, inStockOnly }) {
 function SearchBar({ filterText, inStockOnly }) {
   return (
     <form>
-      <input 
-        type="text" 
-        value={filterText} 
+      <input
+        type="text"
+        value={filterText}
         placeholder="Search..."/>
       <label>
-        <input 
-          type="checkbox" 
+        <input
+          type="checkbox"
           checked={inStockOnly} />
         {' '}
         Only show products in stock
@@ -451,9 +470,9 @@ You provided a \`value\` prop to a form field without an \`onChange\` handler. T
 function SearchBar({ filterText, inStockOnly }) {
   return (
     <form>
-      <input 
-        type="text" 
-        value={filterText} 
+      <input
+        type="text"
+        value={filterText}
         placeholder="Search..."/>
 ```
 Дегенмен, теру сияқты пайдаланушы әрекеттеріне жауап беретін кодты әлі қосқан жоқсыз. Бұл сіздің соңғы қадамыңыз болады.
@@ -461,7 +480,11 @@ function SearchBar({ filterText, inStockOnly }) {
 
 ## 5-қадам: Кері деректер ағынын қосыңыз {/*step-5-add-inverse-data-flow*/}
 
+<<<<<<< HEAD
 Қазіргі уақытта компонентініз иерархияға төменге бағдарланған пропстармен мен күй негізінде рендірленеді. Дегенмен, пайдаланушы енгізуі негізінде күйдің өзгеруі үшін кері бағытта деректер ағынын қамтамасыз ету керек: иерархияның ең төменгі форма компоненттер `FilterableProductTable`-ге күйін жіберу керек.
+=======
+Currently your app renders correctly with props and state flowing down the hierarchy. But to change the state according to user input, you will need to support data flowing the other way: the form components deep in the hierarchy need to update the state in `FilterableProductTable`.
+>>>>>>> 6ec61348646040795fdaa9de14a9bec603260f87
 
 React-те деректер ағыны бір бағытты. Осыған байланысты деректерді екі жақты байланыстыруға қарағанда сәл көбірек код қажет. Іздеу өрісіне мәтін енгізсеніз немесе чекбоксты бассаныз, React елемейтінін көресіз. Осылай болуы қажет. `<input value={filterText} />` қойған кезде, сіз инпутті `мән` пропасын әрқашан `FilterableProductTable` ішінен жіберілген `filterText` күйіне тең етіп орнаттыңыз. `filterText` күйі орнатылмағандықтан, инпут ешқашан өзгермейді.
 
@@ -474,8 +497,8 @@ function FilterableProductTable({ products }) {
 
   return (
     <div>
-      <SearchBar 
-        filterText={filterText} 
+      <SearchBar
+        filterText={filterText}
         inStockOnly={inStockOnly}
         onFilterTextChange={setFilterText}
         onInStockOnlyChange={setInStockOnly} />
@@ -517,13 +540,13 @@ function FilterableProductTable({ products }) {
 
   return (
     <div>
-      <SearchBar 
-        filterText={filterText} 
-        inStockOnly={inStockOnly} 
-        onFilterTextChange={setFilterText} 
+      <SearchBar
+        filterText={filterText}
+        inStockOnly={inStockOnly}
+        onFilterTextChange={setFilterText}
         onInStockOnlyChange={setInStockOnly} />
-      <ProductTable 
-        products={products} 
+      <ProductTable
+        products={products}
         filterText={filterText}
         inStockOnly={inStockOnly} />
     </div>
@@ -605,14 +628,14 @@ function SearchBar({
 }) {
   return (
     <form>
-      <input 
-        type="text" 
-        value={filterText} placeholder="Search..." 
+      <input
+        type="text"
+        value={filterText} placeholder="Search..."
         onChange={(e) => onFilterTextChange(e.target.value)} />
       <label>
-        <input 
-          type="checkbox" 
-          checked={inStockOnly} 
+        <input
+          type="checkbox"
+          checked={inStockOnly}
           onChange={(e) => onInStockOnlyChange(e.target.checked)} />
         {' '}
         Only show products in stock
