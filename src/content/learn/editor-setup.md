@@ -31,7 +31,11 @@ React қауымдастығында қолданылатын басқа тан�
 
 ### Линтинг {/*linting*/}
 
+<<<<<<< HEAD
 Код линтерлері сіз жазған кезде кодыңыздағы ақауларды тауып, оларды ертерек түзетуге көмектеседі. [ESLint](https://eslint.org/) — JavaScript үшін танымал опенсорс жоба.
+=======
+Code linters find problems in your code as you write, helping you fix them early. [ESLint](https://eslint.org/) is a popular, open source linter for JavaScript.
+>>>>>>> 8efce7853d0fc59e615ed1c253799cf1798b8428
 
 * [React-қа ұсынылған ESLint конфигурациясын орнатыңыз](https://www.npmjs.com/package/eslint-config-react-app) ([Node орнатылғанына](https://nodejs.org/en/download/current/) көз жеткізіңіз!)
 * [ESLint бағдарламасын VSCode редакторына орнатыныз](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
